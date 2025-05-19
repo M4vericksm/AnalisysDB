@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Carrega o arquivo CSV
-df = pd.read_csv('vendas_mensais.csv')
+df = pd.read_csv('../AnalisysDB/data mining (previsão de vendas)/vendas_mensais.csv')
 
 # Cria uma coluna contínua de tempo para a regressão (ex: 2022.08)
 df['periodo'] = df['year'] + (df['month'] / 12)
