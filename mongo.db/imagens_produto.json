@@ -1,0 +1,52 @@
+[
+  {
+    "produto_id": "ELET001",
+    "nome_produto": "Smartphone Galaxy S22",
+    "url_imagem": "https://cdn.exemplo.com/img/ELET001.png"
+  },
+  {
+    "produto_id": "ELET002",
+    "nome_produto": "Notebook Dell Inspiron 15",
+    "url_imagem": "https://cdn.exemplo.com/img/ELET002.png"
+  },
+  {
+    "produto_id": "ELET003",
+    "nome_produto": "TV Smart 50\" 4K",
+    "url_imagem": "https://cdn.exemplo.com/img/ELET003.png"
+  },
+  {
+    "produto_id": "ALIM001",
+    "nome_produto": "Café Premium 500g",
+    "url_imagem": "https://cdn.exemplo.com/img/ALIM001.png"
+  },
+  {
+    "produto_id": "VEST001",
+    "nome_produto": "Camisa Polo Masculina",
+    "url_imagem": "https://cdn.exemplo.com/img/VEST001.png"
+  },
+  {
+    "produto_id": "CASA001",
+    "nome_produto": "Jogo de Panelas 5 peças",
+    "url_imagem": "https://cdn.exemplo.com/img/CASA001.png"
+  },
+  {
+    "produto_id": "ESPO004",
+    "nome_produto": "Bicicleta Aro 29",
+    "url_imagem": "https://cdn.exemplo.com/img/ESPO004.png"
+  },
+  {
+    "produto_id": "BELZ002",
+    "nome_produto": "Creme Hidratante 200ml",
+    "url_imagem": "https://cdn.exemplo.com/img/BELZ002.png"
+  },
+  {
+    "produto_id": "LIVR001",
+    "nome_produto": "Livro Best Seller",
+    "url_imagem": "https://cdn.exemplo.com/img/LIVR001.png"
+  },
+  {
+    "produto_id": "BRIN001",
+    "nome_produto": "Lego Classic 500 peças",
+    "url_imagem": "https://cdn.exemplo.com/img/BRIN001.png"
+  }
+]
