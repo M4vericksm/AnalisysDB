@@ -1,8 +1,183 @@
-# AnalisysDB
-Sistema de Análise de Dados de Varejo MultimodeloDescrição do ProjetoEste projeto consiste no desenvolvimento de um sistema de análise de dados para o setor de varejo, utilizando uma abordagem multimodelo de bancos de dados. O sistema tem como objetivo armazenar, processar e analisar informações de vendas de uma rede de lojas fictícia, permitindo análises históricas, identificação de tendências e previsões de vendas.A arquitetura multimodelo visa explorar as características distintas de diferentes paradigmas de bancos de dados para otimizar o armazenamento e o processamento de diferentes tipos de dados e operações.Objetivos EducacionaisAplicar conhecimentos em diversos tipos de bancos de dados (Objeto-Relacional, Relacional - Data Warehouse, NoSQL - Documento).Entender as vantagens e desvantagens de cada abordagem para diferentes tipos de operações de armazenamento e consulta.Implementar técnicas de ETL (Extract, Transform, Load) e OLAP (Online Analytical Processing).Aplicar algoritmos de Data Mining para extrair insights dos dados.Desenvolver uma API para integrar e orquestrar as operações entre os diferentes bancos de dados.Requisitos Técnicos e Tecnologias UtilizadasO projeto utiliza as seguintes tecnologias e aborda os seguintes requisitos técnicos:Modelagem de Dados:ObjectDB (Banco de Dados Objeto-Relacional): Utilizado para gerenciar produtos e suas características. Implementado com Java Persistence API (JPA) e Maven.Data Warehouse (Banco de Dados Relacional): Implementado com esquema estrela/floco de neve para armazenar o histórico de vendas. [Mencionar o SGBD Relacional utilizado, ex: PostgreSQL, MySQL, H2, etc.]MongoDB (Banco de Dados NoSQL - Documento): Utilizado para armazenar dados não estruturados, como comentários de clientes e informações adicionais de produtos (ex: imagens).Aspectos Temporais: Implementação de estruturas e consultas para permitir análise histórica de preços, estoque e vendas ao longo do tempo.Funcionalidades Analíticas:Módulo OLAP: Desenvolvimento de funcionalidades de Análise Analítica Online com pelo menos 3 dimensões (Tempo, Localização - Loja/Cidade, Categoria de Produto). Suporte a operações como drill-down e roll-up.Data Mining: Implementação de pelo menos 2 técnicas de Data Mining:Clustering de Clientes (Implementado com Python e scikit-learn - KMeans).[Mencionar a segunda técnica de Data Mining implementada, ex: Previsão de Vendas, Regras de Associação, etc.]Consultas Temporais: Implementação de consultas que exploram a dimensão tempo para analisar a evolução de métricas.API de Integração: Desenvolvimento de uma API (REST, por exemplo) para orquestrar as operações de escrita, leitura e análise entre os diferentes bancos de dados.Interface e Visualizações:Dashboard para visualização de Key Performance Indicators (KPIs) de vendas.Relatórios analíticos.Interface para exploração de dados via consultas OLAP.[Mencionar a tecnologia/framework utilizado para a interface, ex: JavaFX, Spring Boot com Frontend, etc.]Estrutura do ProjetoO projeto está organizado nas seguintes pastas principais:src/main/java: Contém o código fonte Java da aplicação, incluindo:Classes de entidade JPA (org.example.Cliente, org.example.Produto, org.example.Tempo, org.example.Loja, org.example.Venda, etc.).Lógica de persistência (uso do EntityManager).Código da API de integração.Lógica do módulo OLAP.[Outras classes/pacotes relevantes].src/main/resources: Contém arquivos de configuração e recursos, como:META-INF/persistence.xml: Configuração da unidade de persistência JPA para ObjectDB.[Arquivos de configuração para o Data Warehouse, MongoDB, etc.].src/main/python: Contém scripts Python para Data Mining.clustering.py: Script para clustering de clientes (KMeans).[Outros scripts de Data Mining].src/test: Contém classes para testes automatizados (se aplicável).target: Diretório gerado pelo Maven contendo os arquivos compilados e o build do projeto.pom.xml: Arquivo de configuração do Maven, listando as dependências do projeto (ObjectDB, JPA, drivers JDBC, bibliotecas de Data Mining, etc.)..gitignore: Arquivo que especifica quais arquivos e pastas devem ser ignorados pelo Git.Configuração e InstalaçãoPara configurar e executar o projeto localmente, siga os passos abaixo:Clonar o repositório:git clone https://github.com/M4vericksm/AnalisysDB.git
+Sistema de Análise de Dados de Varejo Multimodelo
+Descrição do Projeto
+Este projeto consiste no desenvolvimento de um sistema de análise de dados para o setor de varejo, utilizando uma abordagem multimodelo de bancos de dados. O sistema tem como objetivo armazenar, processar e analisar informações de vendas de uma rede de lojas fictícia, permitindo análises históricas, identificação de tendências e previsões de vendas.
+
+A arquitetura multimodelo visa explorar as características distintas de diferentes paradigmas de bancos de dados para otimizar o armazenamento e o processamento de diferentes tipos de dados e operações.
+
+Objetivos Educacionais
+Aplicar conhecimentos em diversos tipos de bancos de dados (Objeto-Relacional, Relacional - Data Warehouse, NoSQL - Documento).
+
+Entender as vantagens e desvantagens de cada abordagem para diferentes tipos de operações de armazenamento e consulta.
+
+Implementar técnicas de ETL (Extract, Transform, Load) e OLAP (Online Analytical Processing).
+
+Aplicar algoritmos de Data Mining para extrair insights dos dados.
+
+Desenvolver uma API para integrar e orquestrar as operações entre os diferentes bancos de dados.
+
+Requisitos Técnicos e Tecnologias Utilizadas
+O projeto utiliza as seguintes tecnologias e aborda os seguintes requisitos técnicos:
+
+Modelagem de Dados:
+
+ObjectDB (Banco de Dados Objeto-Relacional): Utilizado para gerenciar produtos e suas características. Implementado com Java Persistence API (JPA) e Maven.
+
+Data Warehouse (Banco de Dados Relacional): Implementado com esquema estrela/floco de neve para armazenar o histórico de vendas. [Mencionar o SGBD Relacional utilizado, ex: PostgreSQL, MySQL, H2, etc.]
+
+MongoDB (Banco de Dados NoSQL - Documento): Utilizado para armazenar dados não estruturados, como comentários de clientes e informações adicionais de produtos (ex: imagens).
+
+Aspectos Temporais: Implementação de estruturas e consultas para permitir análise histórica de preços, estoque e vendas ao longo do tempo.
+
+Funcionalidades Analíticas:
+
+Módulo OLAP: Desenvolvimento de funcionalidades de Análise Analítica Online com pelo menos 3 dimensões (Tempo, Localização - Loja/Cidade, Categoria de Produto). Suporte a operações como drill-down e roll-up.
+
+Data Mining: Implementação de pelo menos 2 técnicas de Data Mining:
+
+Clustering de Clientes (Implementado com Python e scikit-learn - KMeans).
+
+[Mencionar a segunda técnica de Data Mining implementada, ex: Previsão de Vendas, Regras de Associação, etc.]
+
+Consultas Temporais: Implementação de consultas que exploram a dimensão tempo para analisar a evolução de métricas.
+
+API de Integração: Desenvolvimento de uma API (REST, por exemplo) para orquestrar as operações de escrita, leitura e análise entre os diferentes bancos de dados.
+
+Interface e Visualizações:
+
+Dashboard para visualização de Key Performance Indicators (KPIs) de vendas.
+
+Relatórios analíticos.
+
+Interface para exploração de dados via consultas OLAP.
+
+[Mencionar a tecnologia/framework utilizado para a interface, ex: JavaFX, Spring Boot com Frontend, etc.]
+
+Estrutura do Projeto
+O projeto está organizado nas seguintes pastas principais:
+
+src/main/java: Contém o código fonte Java da aplicação, incluindo:
+
+Classes de entidade JPA (org.example.Cliente, org.example.Produto, org.example.Tempo, org.example.Loja, org.example.Venda, etc.).
+
+Lógica de persistência (uso do EntityManager).
+
+Código da API de integração.
+
+Lógica do módulo OLAP.
+
+[Outras classes/pacotes relevantes].
+
+src/main/resources: Contém arquivos de configuração e recursos, como:
+
+META-INF/persistence.xml: Configuração da unidade de persistência JPA para ObjectDB.
+
+[Arquivos de configuração para o Data Warehouse, MongoDB, etc.].
+
+src/main/python: Contém scripts Python para Data Mining.
+
+clustering.py: Script para clustering de clientes (KMeans).
+
+[Outros scripts de Data Mining].
+
+src/test: Contém classes para testes automatizados (se aplicável).
+
+target: Diretório gerado pelo Maven contendo os arquivos compilados e o build do projeto.
+
+pom.xml: Arquivo de configuração do Maven, listando as dependências do projeto (ObjectDB, JPA, drivers JDBC, bibliotecas de Data Mining, etc.).
+
+.gitignore: Arquivo que especifica quais arquivos e pastas devem ser ignorados pelo Git.
+
+Configuração e Instalação
+Para configurar e executar o projeto localmente, siga os passos abaixo:
+
+Clonar o repositório:
+
+git clone https://github.com/M4vericksm/AnalisysDB.git
 cd AnalisysDB
-Instalar o Maven: Certifique-se de ter o Apache Maven instalado. Você pode baixá-lo em https://maven.apache.org/download.cgi.Configurar o ObjectDB: A dependência do ObjectDB e o repositório estão configurados no pom.xml. O banco de dados (varejo.odb) será criado automaticamente na primeira execução da persistência, conforme configurado no persistence.xml.Configurar o Banco de Dados Relacional (Data Warehouse):Instalar o SGBD [Nome do SGBD, ex: PostgreSQL].Criar o banco de dados e executar os scripts de criação das tabelas fato e dimensão.Configurar a conexão no código da aplicação (ou em um arquivo de configuração).[Instruções específicas para o SGBD utilizado].Configurar o MongoDB:Instalar e executar o MongoDB.Configurar a conexão no código da aplicação (ou em um arquivo de configuração).[Instruções específicas para o MongoDB].Configurar o Ambiente Python:Certifique-se de ter o Python instalado.Instale as bibliotecas Python necessárias:pip install pandas scikit-learn [outras_bibliotecas_necessarias]
-Como Compilar e ExecutarCompilar o Projeto Maven: Na pasta raiz do projeto (AnalisysDB), execute:mvn clean install
-Isso compilará o código Java, baixará as dependências e criará o arquivo JAR (se configurado).Executar a Aplicação:Para executar a classe principal de persistência (ex: Main.java):mvn exec:java -Dexec.mainClass="org.example.Main"
-Para executar a API ou a interface (se configurada como executável), siga as instruções específicas dessa parte do projeto.Para executar os scripts Python:python src/main/python/clustering.py
-(Ajuste o caminho do script conforme necessário).Uso dos MódulosMódulo de Persistência (ObjectDB): Utilize as classes de entidade e o EntityManager da JPA no código Java para realizar operações CRUD (Create, Read, Update, Delete) nos dados de produtos.Módulo ETL/Data Warehouse: Desenvolva e execute os processos de ETL para carregar dados de vendas para o Data Warehouse. Utilize consultas SQL para análises multidimensionais.Módulo MongoDB: Utilize o driver ou Spring Data MongoDB no código Java para interagir com os dados não estruturados.Módulo OLAP: Implemente e utilize as funcionalidades OLAP para realizar análises multidimensionais nas vendas (drill-down, roll-up, slice, dice).Módulo Data Mining: Execute os scripts Python ou integre os algoritmos no código Java para realizar clustering de clientes, previsão de vendas, etc.API de Integração: Utilize os endpoints da API para acessar e manipular dados dos diferentes bancos de dados de forma unificada.EntregáveisCódigo-fonte completo (https://github.com/M4vericksm/AnalisysDB).Relatório técnico detalhando a arquitetura, modelagem de dados (para ObjectDB, DW, MongoDB), implementação das funcionalidades e integração.Conjunto de dados de teste utilizado.Manual de utilização do sistema.Apresentação (slides/demonstração).Critérios de AvaliaçãoCorretude técnica na implementação dos diferentes bancos de dados.Completude no atendimento a todos os requisitos especificados.Qualidade da integração entre os diferentes modelos de dados.Relevância e qualidade das análises implementadas (OLAP e Data Mining).Clareza na apresentação e qualidade da documentação (README, Relatório, Manual).
+
+Instalar o Maven: Certifique-se de ter o Apache Maven instalado. Você pode baixá-lo em https://maven.apache.org/download.cgi.
+
+Configurar o ObjectDB: A dependência do ObjectDB e o repositório estão configurados no pom.xml. O banco de dados (varejo.odb) será criado automaticamente na primeira execução da persistência, conforme configurado no persistence.xml.
+
+Configurar o Banco de Dados Relacional (Data Warehouse):
+
+Instalar o SGBD [Nome do SGBD, ex: PostgreSQL].
+
+Criar o banco de dados e executar os scripts de criação das tabelas fato e dimensão.
+
+Configurar a conexão no código da aplicação (ou em um arquivo de configuração).
+
+[Instruções específicas para o SGBD utilizado].
+
+Configurar o MongoDB:
+
+Instalar e executar o MongoDB.
+
+Configurar a conexão no código da aplicação (ou em um arquivo de configuração).
+
+[Instruções específicas para o MongoDB].
+
+Configurar o Ambiente Python:
+
+Certifique-se de ter o Python instalado.
+
+Instale as bibliotecas Python necessárias:
+
+pip install pandas scikit-learn [outras_bibliotecas_necessarias]
+
+Como Compilar e Executar
+Compilar o Projeto Maven: Na pasta raiz do projeto (AnalisysDB), execute:
+
+mvn clean install
+
+Isso compilará o código Java, baixará as dependências e criará o arquivo JAR (se configurado).
+
+Executar a Aplicação:
+
+Para executar a classe principal de persistência (ex: Main.java):
+
+mvn exec:java -Dexec.mainClass="org.example.Main"
+
+Para executar a API ou a interface (se configurada como executável), siga as instruções específicas dessa parte do projeto.
+
+Para executar os scripts Python:
+
+python src/main/python/clustering.py
+
+(Ajuste o caminho do script conforme necessário).
+
+Uso dos Módulos
+Módulo de Persistência (ObjectDB): Utilize as classes de entidade e o EntityManager da JPA no código Java para realizar operações CRUD (Create, Read, Update, Delete) nos dados de produtos.
+
+Módulo ETL/Data Warehouse: Desenvolva e execute os processos de ETL para carregar dados de vendas para o Data Warehouse. Utilize consultas SQL para análises multidimensionais.
+
+Módulo MongoDB: Utilize o driver ou Spring Data MongoDB no código Java para interagir com os dados não estruturados.
+
+Módulo OLAP: Implemente e utilize as funcionalidades OLAP para realizar análises multidimensionais nas vendas (drill-down, roll-up, slice, dice).
+
+Módulo Data Mining: Execute os scripts Python ou integre os algoritmos no código Java para realizar clustering de clientes, previsão de vendas, etc.
+
+API de Integração: Utilize os endpoints da API para acessar e manipular dados dos diferentes bancos de dados de forma unificada.
+
+Entregáveis
+Código-fonte completo (https://github.com/M4vericksm/AnalisysDB).
+
+Relatório técnico detalhando a arquitetura, modelagem de dados (para ObjectDB, DW, MongoDB), implementação das funcionalidades e integração.
+
+Conjunto de dados de teste utilizado.
+
+Manual de utilização do sistema.
+
+Apresentação (slides/demonstração).
+
+Critérios de Avaliação
+Corretude técnica na implementação dos diferentes bancos de dados.
+
+Completude no atendimento a todos os requisitos especificados.
+
+Qualidade da integração entre os diferentes modelos de dados.
+
+Relevância e qualidade das análises implementadas (OLAP e Data Mining).
+
+Clareza na apresentação e qualidade da documentação (README, Relatório, Manual).
+
