@@ -1,38 +1,36 @@
 import pandas as pd
-from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 import numpy as np
 
-# Carrega o arquivo CSV
+# Carrega os dados
 df = pd.read_csv('../AnalisysDB/data mining (previsão de vendas)/vendas_mensais.csv')
 
-# Cria uma coluna contínua de tempo para a regressão (ex: 2022.08)
-df['periodo'] = df['year'] + (df['month'] / 12)
+# Trata os dados
+df['periodo'] = df['ano'].astype(str) + '-' + df['mes'].astype(str).str.zfill(2)
+df['indice_tempo'] = range(len(df))
 
-# Separa variáveis para regressão
-X = df[['periodo']]
+# Modelo de regressão
+X = df[['indice_tempo']]
 y = df['total_vendas']
-
-# Cria e treina o modelo
 modelo = LinearRegression()
 modelo.fit(X, y)
 
-#Gera previsões para os próximos 3 meses
-prox_meses = np.array([df['periodo'].max() + i / 12 for i in range(1, 4)]).reshape(-1, 1)
-previsoes = modelo.predict(prox_meses)
+# Previsões para os próximos 3 meses
+proximos = pd.DataFrame({'indice_tempo': [len(df), len(df)+1, len(df)+2]})
+proximos['previsao'] = modelo.predict(proximos[['indice_tempo']])
+proximos['periodo'] = ['Mês+' + str(i+1) for i in range(3)]
 
-# Mostra previsões no terminal
-print("\nPrevisões para os próximos 3 meses:")
-for i, valor in enumerate(previsoes, start=1):
-    print(f"Mês {i}: R$ {valor:.2f}")
-
-# Gera gráfico com dados reais e previsões
-plt.plot(df['periodo'], y, label='Vendas Reais', marker='o')
-plt.plot(prox_meses, previsoes, label='Previsão', marker='x', linestyle='--', color='red')
-plt.xlabel('Ano.Mês')
+# Gráfico
+plt.figure(figsize=(10, 5))
+plt.plot(df['periodo'], y, marker='o', label='Vendas Reais')
+plt.plot(proximos['periodo'], proximos['previsao'], marker='x', linestyle='--', color='red', label='Previsão')
+plt.title('Previsão de Vendas Mensais')
+plt.xlabel('Período')
 plt.ylabel('Total de Vendas')
-plt.title('Previsão de Vendas')
 plt.grid(True)
+plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
+plt.savefig('grafico_previsao_vendas.png', dpi=300)
 plt.show()
