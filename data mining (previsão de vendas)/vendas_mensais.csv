@@ -1,3 +1,1001 @@
-ano,mes,total_vendas
-2024,1,10043.10
-2024,2,5598.00
+mes_ano,nome_loja,nome_categoria,valor_vendido
+2022-01,"Loja Barra Shopping","Alimentos e Bebidas",15.64
+2022-01,"Loja Barra Shopping","Beleza e Cuidados",422.20
+2022-01,"Loja Barra Shopping",Brinquedos,694.20
+2022-01,"Loja Barra Shopping",Eletrônicos,5688.04
+2022-01,"Loja Barra Shopping","Esportes e Lazer",285.51
+2022-01,"Loja Barra Shopping","Livros e Papelaria",430.56
+2022-01,"Loja Barra Shopping",Vestuário,782.40
+2022-01,"Loja BH Shopping","Alimentos e Bebidas",25.30
+2022-01,"Loja BH Shopping","Beleza e Cuidados",467.34
+2022-01,"Loja BH Shopping",Brinquedos,805.01
+2022-01,"Loja BH Shopping","Casa e Decoração",519.68
+2022-01,"Loja BH Shopping",Eletrônicos,10612.48
+2022-01,"Loja BH Shopping","Esportes e Lazer",1482.39
+2022-01,"Loja BH Shopping","Livros e Papelaria",595.68
+2022-01,"Loja BH Shopping",Vestuário,780.98
+2022-01,"Loja Brasília Shopping","Alimentos e Bebidas",120.07
+2022-01,"Loja Brasília Shopping","Beleza e Cuidados",397.84
+2022-01,"Loja Brasília Shopping",Brinquedos,1297.26
+2022-01,"Loja Brasília Shopping","Casa e Decoração",656.20
+2022-01,"Loja Brasília Shopping",Eletrônicos,15936.21
+2022-01,"Loja Brasília Shopping","Livros e Papelaria",68.02
+2022-01,"Loja Brasília Shopping",Vestuário,1759.58
+2022-01,"Loja Curitiba Shopping","Alimentos e Bebidas",63.17
+2022-01,"Loja Curitiba Shopping","Beleza e Cuidados",533.65
+2022-01,"Loja Curitiba Shopping",Brinquedos,74.70
+2022-01,"Loja Curitiba Shopping","Casa e Decoração",267.51
+2022-01,"Loja Curitiba Shopping",Eletrônicos,628.51
+2022-01,"Loja Curitiba Shopping","Esportes e Lazer",275.71
+2022-01,"Loja Curitiba Shopping","Livros e Papelaria",328.16
+2022-01,"Loja Curitiba Shopping",Vestuário,116.56
+2022-01,"Loja Porto Alegre","Beleza e Cuidados",37.48
+2022-01,"Loja Porto Alegre",Brinquedos,324.08
+2022-01,"Loja Porto Alegre","Casa e Decoração",176.42
+2022-01,"Loja Porto Alegre",Eletrônicos,490.32
+2022-01,"Loja Porto Alegre","Esportes e Lazer",3014.88
+2022-01,"Loja Porto Alegre","Livros e Papelaria",52.61
+2022-01,"Loja Porto Alegre",Vestuário,186.30
+2022-01,"Loja Recife Shopping","Alimentos e Bebidas",21.38
+2022-01,"Loja Recife Shopping","Beleza e Cuidados",1144.26
+2022-01,"Loja Recife Shopping",Brinquedos,58.91
+2022-01,"Loja Recife Shopping","Casa e Decoração",1407.24
+2022-01,"Loja Recife Shopping",Eletrônicos,26304.96
+2022-01,"Loja Recife Shopping","Esportes e Lazer",619.49
+2022-01,"Loja Recife Shopping","Livros e Papelaria",82.08
+2022-01,"Loja Recife Shopping",Vestuário,285.50
+2022-01,"Loja Salvador Shopping","Alimentos e Bebidas",17.24
+2022-01,"Loja Salvador Shopping","Beleza e Cuidados",560.64
+2022-01,"Loja Salvador Shopping",Brinquedos,273.01
+2022-01,"Loja Salvador Shopping","Casa e Decoração",1406.70
+2022-01,"Loja Salvador Shopping",Eletrônicos,622.15
+2022-01,"Loja Salvador Shopping","Esportes e Lazer",3681.61
+2022-01,"Loja Salvador Shopping","Livros e Papelaria",107.86
+2022-01,"Loja Salvador Shopping",Vestuário,2073.74
+2022-01,"Loja Shopping Center","Alimentos e Bebidas",97.05
+2022-01,"Loja Shopping Center","Beleza e Cuidados",186.14
+2022-01,"Loja Shopping Center",Brinquedos,823.06
+2022-01,"Loja Shopping Center","Casa e Decoração",1286.58
+2022-01,"Loja Shopping Center",Eletrônicos,11172.60
+2022-01,"Loja Shopping Center","Esportes e Lazer",772.48
+2022-01,"Loja Shopping Center","Livros e Papelaria",357.67
+2022-01,"Loja Shopping Center",Vestuário,790.62
+2022-02,"Loja Barra Shopping","Alimentos e Bebidas",50.69
+2022-02,"Loja Barra Shopping","Beleza e Cuidados",383.15
+2022-02,"Loja Barra Shopping",Brinquedos,237.39
+2022-02,"Loja Barra Shopping","Casa e Decoração",393.98
+2022-02,"Loja Barra Shopping","Esportes e Lazer",9157.79
+2022-02,"Loja Barra Shopping","Livros e Papelaria",177.80
+2022-02,"Loja Barra Shopping",Vestuário,397.35
+2022-02,"Loja BH Shopping","Alimentos e Bebidas",206.36
+2022-02,"Loja BH Shopping","Beleza e Cuidados",321.62
+2022-02,"Loja BH Shopping",Brinquedos,1015.01
+2022-02,"Loja BH Shopping","Casa e Decoração",2228.52
+2022-02,"Loja BH Shopping",Eletrônicos,12345.19
+2022-02,"Loja BH Shopping","Esportes e Lazer",3767.89
+2022-02,"Loja BH Shopping","Livros e Papelaria",326.67
+2022-02,"Loja BH Shopping",Vestuário,1812.87
+2022-02,"Loja Brasília Shopping","Alimentos e Bebidas",114.61
+2022-02,"Loja Brasília Shopping","Beleza e Cuidados",36.96
+2022-02,"Loja Brasília Shopping",Brinquedos,520.07
+2022-02,"Loja Brasília Shopping","Casa e Decoração",196.39
+2022-02,"Loja Brasília Shopping",Eletrônicos,4319.26
+2022-02,"Loja Brasília Shopping","Esportes e Lazer",3421.23
+2022-02,"Loja Brasília Shopping","Livros e Papelaria",184.50
+2022-02,"Loja Brasília Shopping",Vestuário,258.65
+2022-02,"Loja Curitiba Shopping","Alimentos e Bebidas",27.28
+2022-02,"Loja Curitiba Shopping",Brinquedos,203.02
+2022-02,"Loja Curitiba Shopping",Eletrônicos,16501.48
+2022-02,"Loja Curitiba Shopping","Esportes e Lazer",590.68
+2022-02,"Loja Curitiba Shopping","Livros e Papelaria",371.94
+2022-02,"Loja Curitiba Shopping",Vestuário,257.66
+2022-02,"Loja Porto Alegre","Alimentos e Bebidas",14.26
+2022-02,"Loja Porto Alegre","Beleza e Cuidados",554.06
+2022-02,"Loja Porto Alegre",Brinquedos,304.60
+2022-02,"Loja Porto Alegre","Casa e Decoração",1326.32
+2022-02,"Loja Porto Alegre",Eletrônicos,3414.11
+2022-02,"Loja Porto Alegre","Esportes e Lazer",1510.14
+2022-02,"Loja Porto Alegre","Livros e Papelaria",23.66
+2022-02,"Loja Porto Alegre",Vestuário,855.88
+2022-02,"Loja Recife Shopping","Alimentos e Bebidas",65.29
+2022-02,"Loja Recife Shopping","Beleza e Cuidados",642.97
+2022-02,"Loja Recife Shopping",Brinquedos,776.22
+2022-02,"Loja Recife Shopping","Casa e Decoração",864.02
+2022-02,"Loja Recife Shopping",Eletrônicos,8171.36
+2022-02,"Loja Recife Shopping","Esportes e Lazer",1449.65
+2022-02,"Loja Recife Shopping","Livros e Papelaria",297.45
+2022-02,"Loja Salvador Shopping","Alimentos e Bebidas",24.11
+2022-02,"Loja Salvador Shopping","Beleza e Cuidados",557.24
+2022-02,"Loja Salvador Shopping",Brinquedos,1187.94
+2022-02,"Loja Salvador Shopping","Casa e Decoração",180.41
+2022-02,"Loja Salvador Shopping",Eletrônicos,3658.74
+2022-02,"Loja Salvador Shopping","Esportes e Lazer",270.46
+2022-02,"Loja Salvador Shopping","Livros e Papelaria",103.56
+2022-02,"Loja Salvador Shopping",Vestuário,695.19
+2022-02,"Loja Shopping Center","Alimentos e Bebidas",25.21
+2022-02,"Loja Shopping Center","Beleza e Cuidados",1056.78
+2022-02,"Loja Shopping Center",Brinquedos,174.40
+2022-02,"Loja Shopping Center","Casa e Decoração",1222.45
+2022-02,"Loja Shopping Center",Eletrônicos,7358.26
+2022-02,"Loja Shopping Center","Esportes e Lazer",411.96
+2022-02,"Loja Shopping Center","Livros e Papelaria",39.12
+2022-02,"Loja Shopping Center",Vestuário,3046.49
+2022-03,"Loja Barra Shopping","Alimentos e Bebidas",62.90
+2022-03,"Loja Barra Shopping","Beleza e Cuidados",425.11
+2022-03,"Loja Barra Shopping",Brinquedos,205.46
+2022-03,"Loja Barra Shopping","Casa e Decoração",231.77
+2022-03,"Loja Barra Shopping",Eletrônicos,3359.38
+2022-03,"Loja Barra Shopping","Esportes e Lazer",76.91
+2022-03,"Loja Barra Shopping","Livros e Papelaria",545.08
+2022-03,"Loja Barra Shopping",Vestuário,115.45
+2022-03,"Loja BH Shopping","Alimentos e Bebidas",23.90
+2022-03,"Loja BH Shopping","Beleza e Cuidados",306.36
+2022-03,"Loja BH Shopping",Brinquedos,793.79
+2022-03,"Loja BH Shopping","Casa e Decoração",471.49
+2022-03,"Loja BH Shopping",Eletrônicos,5611.86
+2022-03,"Loja BH Shopping","Esportes e Lazer",1859.80
+2022-03,"Loja BH Shopping","Livros e Papelaria",47.75
+2022-03,"Loja BH Shopping",Vestuário,644.58
+2022-03,"Loja Brasília Shopping","Alimentos e Bebidas",207.78
+2022-03,"Loja Brasília Shopping","Beleza e Cuidados",270.86
+2022-03,"Loja Brasília Shopping",Brinquedos,375.79
+2022-03,"Loja Brasília Shopping",Eletrônicos,9126.84
+2022-03,"Loja Brasília Shopping","Esportes e Lazer",2865.80
+2022-03,"Loja Brasília Shopping","Livros e Papelaria",122.11
+2022-03,"Loja Brasília Shopping",Vestuário,546.88
+2022-03,"Loja Curitiba Shopping","Alimentos e Bebidas",47.72
+2022-03,"Loja Curitiba Shopping","Beleza e Cuidados",267.54
+2022-03,"Loja Curitiba Shopping",Brinquedos,414.78
+2022-03,"Loja Curitiba Shopping","Casa e Decoração",867.00
+2022-03,"Loja Curitiba Shopping",Eletrônicos,11082.66
+2022-03,"Loja Curitiba Shopping","Esportes e Lazer",2928.00
+2022-03,"Loja Curitiba Shopping","Livros e Papelaria",72.59
+2022-03,"Loja Curitiba Shopping",Vestuário,760.36
+2022-03,"Loja Porto Alegre","Alimentos e Bebidas",23.82
+2022-03,"Loja Porto Alegre","Beleza e Cuidados",278.98
+2022-03,"Loja Porto Alegre",Brinquedos,156.80
+2022-03,"Loja Porto Alegre","Casa e Decoração",590.25
+2022-03,"Loja Porto Alegre",Eletrônicos,3389.36
+2022-03,"Loja Porto Alegre","Livros e Papelaria",19.75
+2022-03,"Loja Porto Alegre",Vestuário,786.32
+2022-03,"Loja Recife Shopping","Alimentos e Bebidas",56.20
+2022-03,"Loja Recife Shopping","Beleza e Cuidados",649.39
+2022-03,"Loja Recife Shopping",Brinquedos,637.24
+2022-03,"Loja Recife Shopping","Casa e Decoração",926.07
+2022-03,"Loja Recife Shopping",Eletrônicos,3346.59
+2022-03,"Loja Recife Shopping","Esportes e Lazer",3281.28
+2022-03,"Loja Recife Shopping","Livros e Papelaria",262.56
+2022-03,"Loja Recife Shopping",Vestuário,928.93
+2022-03,"Loja Salvador Shopping","Alimentos e Bebidas",26.60
+2022-03,"Loja Salvador Shopping","Beleza e Cuidados",183.98
+2022-03,"Loja Salvador Shopping",Brinquedos,71.07
+2022-03,"Loja Salvador Shopping","Casa e Decoração",256.78
+2022-03,"Loja Salvador Shopping",Eletrônicos,8145.48
+2022-03,"Loja Salvador Shopping","Esportes e Lazer",2017.74
+2022-03,"Loja Salvador Shopping","Livros e Papelaria",323.02
+2022-03,"Loja Salvador Shopping",Vestuário,1031.17
+2022-03,"Loja Shopping Center","Alimentos e Bebidas",5.60
+2022-03,"Loja Shopping Center","Beleza e Cuidados",49.54
+2022-03,"Loja Shopping Center",Brinquedos,233.00
+2022-03,"Loja Shopping Center","Casa e Decoração",196.70
+2022-03,"Loja Shopping Center",Eletrônicos,10431.90
+2022-03,"Loja Shopping Center","Esportes e Lazer",4764.29
+2022-03,"Loja Shopping Center","Livros e Papelaria",148.65
+2022-03,"Loja Shopping Center",Vestuário,234.40
+2022-04,"Loja Barra Shopping","Alimentos e Bebidas",11.16
+2022-04,"Loja Barra Shopping","Beleza e Cuidados",258.02
+2022-04,"Loja Barra Shopping",Brinquedos,868.74
+2022-04,"Loja Barra Shopping","Casa e Decoração",385.98
+2022-04,"Loja Barra Shopping",Eletrônicos,10850.11
+2022-04,"Loja Barra Shopping","Esportes e Lazer",1137.89
+2022-04,"Loja Barra Shopping","Livros e Papelaria",19.56
+2022-04,"Loja Barra Shopping",Vestuário,114.59
+2022-04,"Loja BH Shopping","Alimentos e Bebidas",40.25
+2022-04,"Loja BH Shopping","Beleza e Cuidados",18.21
+2022-04,"Loja BH Shopping",Brinquedos,687.18
+2022-04,"Loja BH Shopping","Casa e Decoração",1154.54
+2022-04,"Loja BH Shopping","Esportes e Lazer",4526.44
+2022-04,"Loja BH Shopping","Livros e Papelaria",184.83
+2022-04,"Loja BH Shopping",Vestuário,1424.97
+2022-04,"Loja Brasília Shopping","Beleza e Cuidados",66.67
+2022-04,"Loja Brasília Shopping",Brinquedos,900.12
+2022-04,"Loja Brasília Shopping","Casa e Decoração",859.02
+2022-04,"Loja Brasília Shopping",Eletrônicos,244.18
+2022-04,"Loja Brasília Shopping","Esportes e Lazer",1084.87
+2022-04,"Loja Brasília Shopping","Livros e Papelaria",209.68
+2022-04,"Loja Curitiba Shopping","Alimentos e Bebidas",8.88
+2022-04,"Loja Curitiba Shopping","Casa e Decoração",174.32
+2022-04,"Loja Curitiba Shopping",Eletrônicos,3425.41
+2022-04,"Loja Curitiba Shopping","Esportes e Lazer",1426.06
+2022-04,"Loja Curitiba Shopping",Vestuário,644.26
+2022-04,"Loja Porto Alegre","Alimentos e Bebidas",43.28
+2022-04,"Loja Porto Alegre",Brinquedos,890.44
+2022-04,"Loja Porto Alegre","Casa e Decoração",659.42
+2022-04,"Loja Porto Alegre",Eletrônicos,18532.03
+2022-04,"Loja Porto Alegre","Esportes e Lazer",637.01
+2022-04,"Loja Porto Alegre","Livros e Papelaria",221.27
+2022-04,"Loja Porto Alegre",Vestuário,1449.52
+2022-04,"Loja Recife Shopping","Alimentos e Bebidas",8.41
+2022-04,"Loja Recife Shopping","Beleza e Cuidados",775.28
+2022-04,"Loja Recife Shopping",Brinquedos,442.84
+2022-04,"Loja Recife Shopping",Eletrônicos,248.35
+2022-04,"Loja Recife Shopping","Esportes e Lazer",508.47
+2022-04,"Loja Recife Shopping","Livros e Papelaria",219.83
+2022-04,"Loja Recife Shopping",Vestuário,656.68
+2022-04,"Loja Salvador Shopping","Alimentos e Bebidas",34.94
+2022-04,"Loja Salvador Shopping",Brinquedos,255.04
+2022-04,"Loja Salvador Shopping","Casa e Decoração",871.07
+2022-04,"Loja Salvador Shopping",Eletrônicos,197.72
+2022-04,"Loja Salvador Shopping","Esportes e Lazer",398.22
+2022-04,"Loja Salvador Shopping","Livros e Papelaria",108.54
+2022-04,"Loja Salvador Shopping",Vestuário,1394.78
+2022-04,"Loja Shopping Center","Alimentos e Bebidas",107.41
+2022-04,"Loja Shopping Center","Beleza e Cuidados",281.46
+2022-04,"Loja Shopping Center",Brinquedos,349.66
+2022-04,"Loja Shopping Center","Casa e Decoração",1085.05
+2022-04,"Loja Shopping Center",Eletrônicos,6458.76
+2022-04,"Loja Shopping Center","Esportes e Lazer",1043.23
+2022-04,"Loja Shopping Center","Livros e Papelaria",97.86
+2022-05,"Loja Barra Shopping","Alimentos e Bebidas",43.80
+2022-05,"Loja Barra Shopping","Beleza e Cuidados",300.04
+2022-05,"Loja Barra Shopping",Brinquedos,698.11
+2022-05,"Loja Barra Shopping","Casa e Decoração",174.88
+2022-05,"Loja Barra Shopping",Eletrônicos,20667.22
+2022-05,"Loja Barra Shopping","Esportes e Lazer",2983.24
+2022-05,"Loja Barra Shopping","Livros e Papelaria",215.16
+2022-05,"Loja BH Shopping","Alimentos e Bebidas",85.86
+2022-05,"Loja BH Shopping","Beleza e Cuidados",1014.99
+2022-05,"Loja BH Shopping",Brinquedos,926.38
+2022-05,"Loja BH Shopping","Casa e Decoração",860.10
+2022-05,"Loja BH Shopping",Eletrônicos,13036.68
+2022-05,"Loja BH Shopping","Esportes e Lazer",4764.01
+2022-05,"Loja BH Shopping","Livros e Papelaria",53.85
+2022-05,"Loja BH Shopping",Vestuário,610.30
+2022-05,"Loja Brasília Shopping","Alimentos e Bebidas",47.42
+2022-05,"Loja Brasília Shopping","Beleza e Cuidados",1051.88
+2022-05,"Loja Brasília Shopping",Brinquedos,293.44
+2022-05,"Loja Brasília Shopping",Eletrônicos,6952.89
+2022-05,"Loja Brasília Shopping","Esportes e Lazer",77.98
+2022-05,"Loja Brasília Shopping","Livros e Papelaria",101.72
+2022-05,"Loja Brasília Shopping",Vestuário,231.50
+2022-05,"Loja Curitiba Shopping","Alimentos e Bebidas",8.88
+2022-05,"Loja Curitiba Shopping","Beleza e Cuidados",684.02
+2022-05,"Loja Curitiba Shopping",Brinquedos,38.40
+2022-05,"Loja Curitiba Shopping","Casa e Decoração",378.10
+2022-05,"Loja Curitiba Shopping",Eletrônicos,6375.56
+2022-05,"Loja Curitiba Shopping","Esportes e Lazer",288.43
+2022-05,"Loja Curitiba Shopping","Livros e Papelaria",34.87
+2022-05,"Loja Porto Alegre","Alimentos e Bebidas",43.87
+2022-05,"Loja Porto Alegre","Beleza e Cuidados",332.20
+2022-05,"Loja Porto Alegre",Brinquedos,88.59
+2022-05,"Loja Porto Alegre","Casa e Decoração",689.34
+2022-05,"Loja Porto Alegre",Eletrônicos,20048.03
+2022-05,"Loja Porto Alegre","Esportes e Lazer",607.07
+2022-05,"Loja Porto Alegre","Livros e Papelaria",96.92
+2022-05,"Loja Porto Alegre",Vestuário,2153.92
+2022-05,"Loja Recife Shopping","Alimentos e Bebidas",88.24
+2022-05,"Loja Recife Shopping","Beleza e Cuidados",232.51
+2022-05,"Loja Recife Shopping",Brinquedos,693.42
+2022-05,"Loja Recife Shopping","Casa e Decoração",191.56
+2022-05,"Loja Recife Shopping",Eletrônicos,3274.13
+2022-05,"Loja Recife Shopping","Esportes e Lazer",231.93
+2022-05,"Loja Recife Shopping","Livros e Papelaria",184.45
+2022-05,"Loja Recife Shopping",Vestuário,509.48
+2022-05,"Loja Salvador Shopping","Alimentos e Bebidas",67.13
+2022-05,"Loja Salvador Shopping","Beleza e Cuidados",679.68
+2022-05,"Loja Salvador Shopping",Brinquedos,412.14
+2022-05,"Loja Salvador Shopping","Casa e Decoração",651.23
+2022-05,"Loja Salvador Shopping",Eletrônicos,11934.12
+2022-05,"Loja Salvador Shopping","Esportes e Lazer",551.95
+2022-05,"Loja Salvador Shopping","Livros e Papelaria",324.29
+2022-05,"Loja Salvador Shopping",Vestuário,392.45
+2022-05,"Loja Shopping Center","Beleza e Cuidados",48.48
+2022-05,"Loja Shopping Center",Brinquedos,145.98
+2022-05,"Loja Shopping Center","Casa e Decoração",321.89
+2022-05,"Loja Shopping Center",Eletrônicos,6143.77
+2022-05,"Loja Shopping Center","Esportes e Lazer",3075.03
+2022-05,"Loja Shopping Center","Livros e Papelaria",59.01
+2022-05,"Loja Shopping Center",Vestuário,488.92
+2022-06,"Loja Barra Shopping","Alimentos e Bebidas",8.81
+2022-06,"Loja Barra Shopping",Brinquedos,667.26
+2022-06,"Loja Barra Shopping",Eletrônicos,9278.50
+2022-06,"Loja Barra Shopping","Esportes e Lazer",1870.10
+2022-06,"Loja Barra Shopping","Livros e Papelaria",132.93
+2022-06,"Loja Barra Shopping",Vestuário,1734.41
+2022-06,"Loja BH Shopping","Beleza e Cuidados",665.31
+2022-06,"Loja BH Shopping",Brinquedos,500.84
+2022-06,"Loja BH Shopping","Casa e Decoração",1864.52
+2022-06,"Loja BH Shopping",Eletrônicos,11158.28
+2022-06,"Loja BH Shopping","Esportes e Lazer",4141.99
+2022-06,"Loja BH Shopping","Livros e Papelaria",317.27
+2022-06,"Loja BH Shopping",Vestuário,1418.30
+2022-06,"Loja Brasília Shopping","Alimentos e Bebidas",46.23
+2022-06,"Loja Brasília Shopping","Beleza e Cuidados",174.12
+2022-06,"Loja Brasília Shopping",Brinquedos,85.81
+2022-06,"Loja Brasília Shopping","Casa e Decoração",968.26
+2022-06,"Loja Brasília Shopping",Eletrônicos,2609.74
+2022-06,"Loja Brasília Shopping","Esportes e Lazer",1892.03
+2022-06,"Loja Brasília Shopping","Livros e Papelaria",279.65
+2022-06,"Loja Brasília Shopping",Vestuário,951.56
+2022-06,"Loja Curitiba Shopping","Alimentos e Bebidas",56.14
+2022-06,"Loja Curitiba Shopping","Beleza e Cuidados",172.59
+2022-06,"Loja Curitiba Shopping",Brinquedos,704.72
+2022-06,"Loja Curitiba Shopping","Casa e Decoração",480.06
+2022-06,"Loja Curitiba Shopping",Eletrônicos,10446.87
+2022-06,"Loja Curitiba Shopping","Esportes e Lazer",3358.26
+2022-06,"Loja Curitiba Shopping","Livros e Papelaria",325.81
+2022-06,"Loja Curitiba Shopping",Vestuário,1075.24
+2022-06,"Loja Porto Alegre","Alimentos e Bebidas",35.86
+2022-06,"Loja Porto Alegre","Beleza e Cuidados",387.17
+2022-06,"Loja Porto Alegre",Brinquedos,238.58
+2022-06,"Loja Porto Alegre","Casa e Decoração",593.40
+2022-06,"Loja Porto Alegre","Esportes e Lazer",1625.36
+2022-06,"Loja Porto Alegre","Livros e Papelaria",19.08
+2022-06,"Loja Porto Alegre",Vestuário,1602.93
+2022-06,"Loja Recife Shopping","Alimentos e Bebidas",24.08
+2022-06,"Loja Recife Shopping","Beleza e Cuidados",483.78
+2022-06,"Loja Recife Shopping",Brinquedos,831.44
+2022-06,"Loja Recife Shopping","Casa e Decoração",256.38
+2022-06,"Loja Recife Shopping",Eletrônicos,6155.42
+2022-06,"Loja Recife Shopping","Esportes e Lazer",315.44
+2022-06,"Loja Recife Shopping","Livros e Papelaria",338.01
+2022-06,"Loja Salvador Shopping","Alimentos e Bebidas",8.41
+2022-06,"Loja Salvador Shopping","Beleza e Cuidados",814.36
+2022-06,"Loja Salvador Shopping",Brinquedos,828.38
+2022-06,"Loja Salvador Shopping","Casa e Decoração",196.96
+2022-06,"Loja Salvador Shopping",Eletrônicos,5032.45
+2022-06,"Loja Salvador Shopping","Esportes e Lazer",77.92
+2022-06,"Loja Salvador Shopping","Livros e Papelaria",379.26
+2022-06,"Loja Salvador Shopping",Vestuário,2177.52
+2022-06,"Loja Shopping Center","Alimentos e Bebidas",24.51
+2022-06,"Loja Shopping Center","Beleza e Cuidados",295.59
+2022-06,"Loja Shopping Center",Brinquedos,155.22
+2022-06,"Loja Shopping Center","Casa e Decoração",559.46
+2022-06,"Loja Shopping Center",Eletrônicos,17738.77
+2022-06,"Loja Shopping Center","Esportes e Lazer",3451.67
+2022-06,"Loja Shopping Center",Vestuário,389.21
+2022-07,"Loja Barra Shopping","Beleza e Cuidados",1402.42
+2022-07,"Loja Barra Shopping",Brinquedos,149.55
+2022-07,"Loja Barra Shopping","Casa e Decoração",88.30
+2022-07,"Loja Barra Shopping","Esportes e Lazer",1464.28
+2022-07,"Loja Barra Shopping","Livros e Papelaria",98.64
+2022-07,"Loja Barra Shopping",Vestuário,1089.79
+2022-07,"Loja BH Shopping","Alimentos e Bebidas",17.24
+2022-07,"Loja BH Shopping","Beleza e Cuidados",458.82
+2022-07,"Loja BH Shopping",Eletrônicos,249.15
+2022-07,"Loja BH Shopping","Esportes e Lazer",75.86
+2022-07,"Loja BH Shopping","Livros e Papelaria",47.34
+2022-07,"Loja BH Shopping",Vestuário,248.01
+2022-07,"Loja Brasília Shopping","Alimentos e Bebidas",40.50
+2022-07,"Loja Brasília Shopping","Beleza e Cuidados",465.00
+2022-07,"Loja Brasília Shopping",Brinquedos,1361.85
+2022-07,"Loja Brasília Shopping","Casa e Decoração",426.54
+2022-07,"Loja Brasília Shopping",Eletrônicos,6098.36
+2022-07,"Loja Brasília Shopping","Esportes e Lazer",469.98
+2022-07,"Loja Brasília Shopping","Livros e Papelaria",293.40
+2022-07,"Loja Brasília Shopping",Vestuário,815.07
+2022-07,"Loja Curitiba Shopping","Alimentos e Bebidas",2.77
+2022-07,"Loja Curitiba Shopping","Beleza e Cuidados",735.14
+2022-07,"Loja Curitiba Shopping","Casa e Decoração",87.49
+2022-07,"Loja Curitiba Shopping","Esportes e Lazer",3035.08
+2022-07,"Loja Curitiba Shopping",Vestuário,796.64
+2022-07,"Loja Porto Alegre","Alimentos e Bebidas",24.16
+2022-07,"Loja Porto Alegre","Beleza e Cuidados",411.30
+2022-07,"Loja Porto Alegre",Brinquedos,409.54
+2022-07,"Loja Porto Alegre","Casa e Decoração",1135.60
+2022-07,"Loja Porto Alegre",Eletrônicos,390.12
+2022-07,"Loja Porto Alegre","Livros e Papelaria",89.02
+2022-07,"Loja Porto Alegre",Vestuário,503.12
+2022-07,"Loja Recife Shopping","Beleza e Cuidados",727.79
+2022-07,"Loja Recife Shopping",Brinquedos,218.74
+2022-07,"Loja Recife Shopping","Casa e Decoração",400.47
+2022-07,"Loja Recife Shopping",Eletrônicos,18225.27
+2022-07,"Loja Recife Shopping","Esportes e Lazer",165.48
+2022-07,"Loja Recife Shopping","Livros e Papelaria",134.08
+2022-07,"Loja Recife Shopping",Vestuário,518.72
+2022-07,"Loja Salvador Shopping","Alimentos e Bebidas",24.46
+2022-07,"Loja Salvador Shopping",Brinquedos,57.53
+2022-07,"Loja Salvador Shopping","Casa e Decoração",669.09
+2022-07,"Loja Salvador Shopping","Livros e Papelaria",174.74
+2022-07,"Loja Shopping Center","Alimentos e Bebidas",5.56
+2022-07,"Loja Shopping Center","Beleza e Cuidados",113.27
+2022-07,"Loja Shopping Center",Brinquedos,1009.10
+2022-07,"Loja Shopping Center","Casa e Decoração",740.94
+2022-07,"Loja Shopping Center",Eletrônicos,2195.09
+2022-07,"Loja Shopping Center","Esportes e Lazer",4008.17
+2022-07,"Loja Shopping Center","Livros e Papelaria",154.63
+2022-07,"Loja Shopping Center",Vestuário,1086.11
+2022-08,"Loja Barra Shopping","Alimentos e Bebidas",2.76
+2022-08,"Loja Barra Shopping","Beleza e Cuidados",457.79
+2022-08,"Loja Barra Shopping","Casa e Decoração",727.39
+2022-08,"Loja Barra Shopping",Eletrônicos,9344.59
+2022-08,"Loja Barra Shopping","Esportes e Lazer",7423.39
+2022-08,"Loja Barra Shopping","Livros e Papelaria",53.42
+2022-08,"Loja Barra Shopping",Vestuário,815.65
+2022-08,"Loja BH Shopping","Alimentos e Bebidas",26.14
+2022-08,"Loja BH Shopping","Beleza e Cuidados",548.74
+2022-08,"Loja BH Shopping",Brinquedos,638.60
+2022-08,"Loja BH Shopping","Casa e Decoração",586.81
+2022-08,"Loja BH Shopping",Eletrônicos,8024.63
+2022-08,"Loja BH Shopping","Esportes e Lazer",2894.01
+2022-08,"Loja BH Shopping","Livros e Papelaria",376.84
+2022-08,"Loja BH Shopping",Vestuário,440.93
+2022-08,"Loja Brasília Shopping","Alimentos e Bebidas",49.06
+2022-08,"Loja Brasília Shopping","Beleza e Cuidados",596.12
+2022-08,"Loja Brasília Shopping",Brinquedos,633.88
+2022-08,"Loja Brasília Shopping","Casa e Decoração",376.45
+2022-08,"Loja Brasília Shopping","Esportes e Lazer",4699.25
+2022-08,"Loja Brasília Shopping","Livros e Papelaria",76.64
+2022-08,"Loja Brasília Shopping",Vestuário,673.17
+2022-08,"Loja Curitiba Shopping","Alimentos e Bebidas",26.18
+2022-08,"Loja Curitiba Shopping","Beleza e Cuidados",553.60
+2022-08,"Loja Curitiba Shopping",Brinquedos,323.82
+2022-08,"Loja Curitiba Shopping","Casa e Decoração",269.51
+2022-08,"Loja Curitiba Shopping",Eletrônicos,674.44
+2022-08,"Loja Curitiba Shopping","Esportes e Lazer",3425.82
+2022-08,"Loja Curitiba Shopping","Livros e Papelaria",468.50
+2022-08,"Loja Curitiba Shopping",Vestuário,1852.37
+2022-08,"Loja Porto Alegre","Alimentos e Bebidas",25.98
+2022-08,"Loja Porto Alegre","Beleza e Cuidados",227.55
+2022-08,"Loja Porto Alegre",Brinquedos,1232.19
+2022-08,"Loja Porto Alegre","Casa e Decoração",234.15
+2022-08,"Loja Porto Alegre",Eletrônicos,3327.44
+2022-08,"Loja Porto Alegre","Esportes e Lazer",781.88
+2022-08,"Loja Porto Alegre","Livros e Papelaria",365.44
+2022-08,"Loja Porto Alegre",Vestuário,912.54
+2022-08,"Loja Recife Shopping","Alimentos e Bebidas",51.87
+2022-08,"Loja Recife Shopping","Beleza e Cuidados",504.51
+2022-08,"Loja Recife Shopping",Brinquedos,290.44
+2022-08,"Loja Recife Shopping","Casa e Decoração",665.19
+2022-08,"Loja Recife Shopping","Esportes e Lazer",76.63
+2022-08,"Loja Recife Shopping","Livros e Papelaria",24.65
+2022-08,"Loja Salvador Shopping","Alimentos e Bebidas",41.30
+2022-08,"Loja Salvador Shopping","Beleza e Cuidados",309.18
+2022-08,"Loja Salvador Shopping",Brinquedos,230.69
+2022-08,"Loja Salvador Shopping","Casa e Decoração",836.34
+2022-08,"Loja Salvador Shopping",Eletrônicos,26497.26
+2022-08,"Loja Salvador Shopping","Esportes e Lazer",77.62
+2022-08,"Loja Salvador Shopping","Livros e Papelaria",96.79
+2022-08,"Loja Salvador Shopping",Vestuário,907.65
+2022-08,"Loja Shopping Center","Beleza e Cuidados",423.94
+2022-08,"Loja Shopping Center",Brinquedos,426.35
+2022-08,"Loja Shopping Center","Casa e Decoração",626.48
+2022-08,"Loja Shopping Center",Eletrônicos,398.50
+2022-08,"Loja Shopping Center","Esportes e Lazer",3760.64
+2022-08,"Loja Shopping Center","Livros e Papelaria",204.12
+2022-08,"Loja Shopping Center",Vestuário,767.74
+2022-09,"Loja Barra Shopping","Alimentos e Bebidas",119.89
+2022-09,"Loja Barra Shopping","Beleza e Cuidados",867.86
+2022-09,"Loja Barra Shopping",Brinquedos,849.83
+2022-09,"Loja Barra Shopping","Casa e Decoração",700.02
+2022-09,"Loja Barra Shopping",Eletrônicos,3091.03
+2022-09,"Loja Barra Shopping","Esportes e Lazer",2342.08
+2022-09,"Loja Barra Shopping","Livros e Papelaria",96.83
+2022-09,"Loja Barra Shopping",Vestuário,2546.66
+2022-09,"Loja BH Shopping","Alimentos e Bebidas",24.44
+2022-09,"Loja BH Shopping","Beleza e Cuidados",18.79
+2022-09,"Loja BH Shopping","Casa e Decoração",172.30
+2022-09,"Loja BH Shopping",Eletrônicos,11122.14
+2022-09,"Loja BH Shopping","Esportes e Lazer",259.66
+2022-09,"Loja BH Shopping","Livros e Papelaria",560.38
+2022-09,"Loja BH Shopping",Vestuário,442.14
+2022-09,"Loja Brasília Shopping","Alimentos e Bebidas",90.78
+2022-09,"Loja Brasília Shopping",Brinquedos,879.44
+2022-09,"Loja Brasília Shopping","Casa e Decoração",362.24
+2022-09,"Loja Brasília Shopping",Eletrônicos,3836.59
+2022-09,"Loja Brasília Shopping","Esportes e Lazer",3459.50
+2022-09,"Loja Brasília Shopping","Livros e Papelaria",123.06
+2022-09,"Loja Brasília Shopping",Vestuário,489.54
+2022-09,"Loja Curitiba Shopping","Alimentos e Bebidas",24.88
+2022-09,"Loja Curitiba Shopping","Beleza e Cuidados",18.58
+2022-09,"Loja Curitiba Shopping","Casa e Decoração",579.21
+2022-09,"Loja Curitiba Shopping",Eletrônicos,491.10
+2022-09,"Loja Curitiba Shopping","Esportes e Lazer",116.25
+2022-09,"Loja Curitiba Shopping",Vestuário,433.18
+2022-09,"Loja Porto Alegre","Alimentos e Bebidas",25.80
+2022-09,"Loja Porto Alegre","Beleza e Cuidados",540.55
+2022-09,"Loja Porto Alegre",Brinquedos,36.97
+2022-09,"Loja Porto Alegre","Casa e Decoração",1145.58
+2022-09,"Loja Porto Alegre",Eletrônicos,4904.94
+2022-09,"Loja Porto Alegre","Esportes e Lazer",3268.09
+2022-09,"Loja Porto Alegre","Livros e Papelaria",337.20
+2022-09,"Loja Porto Alegre",Vestuário,899.66
+2022-09,"Loja Recife Shopping","Alimentos e Bebidas",16.12
+2022-09,"Loja Recife Shopping","Beleza e Cuidados",288.61
+2022-09,"Loja Recife Shopping",Brinquedos,131.98
+2022-09,"Loja Recife Shopping","Casa e Decoração",291.41
+2022-09,"Loja Recife Shopping",Eletrônicos,22804.23
+2022-09,"Loja Recife Shopping","Esportes e Lazer",231.10
+2022-09,"Loja Recife Shopping",Vestuário,148.57
+2022-09,"Loja Salvador Shopping","Alimentos e Bebidas",8.54
+2022-09,"Loja Salvador Shopping","Beleza e Cuidados",443.30
+2022-09,"Loja Salvador Shopping",Brinquedos,173.26
+2022-09,"Loja Salvador Shopping","Casa e Decoração",297.80
+2022-09,"Loja Salvador Shopping",Eletrônicos,9452.10
+2022-09,"Loja Salvador Shopping","Esportes e Lazer",336.74
+2022-09,"Loja Salvador Shopping","Livros e Papelaria",82.14
+2022-09,"Loja Salvador Shopping",Vestuário,469.41
+2022-09,"Loja Shopping Center","Alimentos e Bebidas",16.94
+2022-09,"Loja Shopping Center","Beleza e Cuidados",355.04
+2022-09,"Loja Shopping Center",Brinquedos,438.88
+2022-09,"Loja Shopping Center","Casa e Decoração",723.04
+2022-09,"Loja Shopping Center",Eletrônicos,7307.44
+2022-09,"Loja Shopping Center","Esportes e Lazer",5046.31
+2022-09,"Loja Shopping Center","Livros e Papelaria",182.78
+2022-10,"Loja Barra Shopping","Alimentos e Bebidas",8.88
+2022-10,"Loja Barra Shopping","Beleza e Cuidados",1492.92
+2022-10,"Loja Barra Shopping",Brinquedos,637.23
+2022-10,"Loja Barra Shopping","Casa e Decoração",294.27
+2022-10,"Loja Barra Shopping",Eletrônicos,6298.74
+2022-10,"Loja Barra Shopping","Esportes e Lazer",636.60
+2022-10,"Loja Barra Shopping","Livros e Papelaria",173.52
+2022-10,"Loja Barra Shopping",Vestuário,542.50
+2022-10,"Loja BH Shopping","Alimentos e Bebidas",50.65
+2022-10,"Loja BH Shopping","Beleza e Cuidados",561.35
+2022-10,"Loja BH Shopping",Brinquedos,674.89
+2022-10,"Loja BH Shopping","Casa e Decoração",1208.46
+2022-10,"Loja BH Shopping",Eletrônicos,10260.46
+2022-10,"Loja BH Shopping","Esportes e Lazer",1886.60
+2022-10,"Loja BH Shopping","Livros e Papelaria",284.90
+2022-10,"Loja BH Shopping",Vestuário,540.38
+2022-10,"Loja Brasília Shopping","Alimentos e Bebidas",100.82
+2022-10,"Loja Brasília Shopping","Beleza e Cuidados",1091.42
+2022-10,"Loja Brasília Shopping",Brinquedos,642.40
+2022-10,"Loja Brasília Shopping","Casa e Decoração",1520.65
+2022-10,"Loja Brasília Shopping",Eletrônicos,17051.43
+2022-10,"Loja Brasília Shopping","Esportes e Lazer",6940.14
+2022-10,"Loja Brasília Shopping","Livros e Papelaria",314.45
+2022-10,"Loja Brasília Shopping",Vestuário,1827.99
+2022-10,"Loja Curitiba Shopping","Alimentos e Bebidas",4.50
+2022-10,"Loja Curitiba Shopping","Beleza e Cuidados",86.36
+2022-10,"Loja Curitiba Shopping",Brinquedos,1566.93
+2022-10,"Loja Curitiba Shopping","Casa e Decoração",537.17
+2022-10,"Loja Curitiba Shopping",Eletrônicos,194.25
+2022-10,"Loja Curitiba Shopping","Esportes e Lazer",410.45
+2022-10,"Loja Curitiba Shopping","Livros e Papelaria",232.44
+2022-10,"Loja Curitiba Shopping",Vestuário,821.07
+2022-10,"Loja Porto Alegre","Alimentos e Bebidas",16.24
+2022-10,"Loja Porto Alegre",Brinquedos,896.19
+2022-10,"Loja Porto Alegre","Casa e Decoração",1470.23
+2022-10,"Loja Porto Alegre",Eletrônicos,4348.14
+2022-10,"Loja Porto Alegre","Esportes e Lazer",3053.22
+2022-10,"Loja Porto Alegre","Livros e Papelaria",214.25
+2022-10,"Loja Porto Alegre",Vestuário,532.96
+2022-10,"Loja Recife Shopping","Alimentos e Bebidas",17.93
+2022-10,"Loja Recife Shopping","Beleza e Cuidados",278.66
+2022-10,"Loja Recife Shopping",Brinquedos,874.01
+2022-10,"Loja Recife Shopping","Casa e Decoração",758.76
+2022-10,"Loja Recife Shopping","Esportes e Lazer",3243.29
+2022-10,"Loja Recife Shopping","Livros e Papelaria",43.61
+2022-10,"Loja Recife Shopping",Vestuário,1429.62
+2022-10,"Loja Salvador Shopping","Alimentos e Bebidas",118.53
+2022-10,"Loja Salvador Shopping","Beleza e Cuidados",616.47
+2022-10,"Loja Salvador Shopping",Brinquedos,552.52
+2022-10,"Loja Salvador Shopping","Casa e Decoração",461.48
+2022-10,"Loja Salvador Shopping",Eletrônicos,5123.44
+2022-10,"Loja Salvador Shopping","Esportes e Lazer",1465.09
+2022-10,"Loja Salvador Shopping","Livros e Papelaria",282.42
+2022-10,"Loja Salvador Shopping",Vestuário,397.45
+2022-10,"Loja Shopping Center","Alimentos e Bebidas",11.61
+2022-10,"Loja Shopping Center","Beleza e Cuidados",539.89
+2022-10,"Loja Shopping Center",Brinquedos,583.80
+2022-10,"Loja Shopping Center","Casa e Decoração",587.58
+2022-10,"Loja Shopping Center",Eletrônicos,479.02
+2022-10,"Loja Shopping Center","Esportes e Lazer",406.24
+2022-10,"Loja Shopping Center","Livros e Papelaria",171.50
+2022-10,"Loja Shopping Center",Vestuário,792.80
+2022-11,"Loja Barra Shopping","Alimentos e Bebidas",16.96
+2022-11,"Loja Barra Shopping","Beleza e Cuidados",60.42
+2022-11,"Loja Barra Shopping",Brinquedos,678.72
+2022-11,"Loja Barra Shopping","Casa e Decoração",235.43
+2022-11,"Loja Barra Shopping",Eletrônicos,11277.71
+2022-11,"Loja Barra Shopping","Esportes e Lazer",542.85
+2022-11,"Loja Barra Shopping","Livros e Papelaria",308.86
+2022-11,"Loja Barra Shopping",Vestuário,1731.53
+2022-11,"Loja BH Shopping","Alimentos e Bebidas",60.08
+2022-11,"Loja BH Shopping","Beleza e Cuidados",265.53
+2022-11,"Loja BH Shopping",Brinquedos,657.66
+2022-11,"Loja BH Shopping","Casa e Decoração",272.48
+2022-11,"Loja BH Shopping",Eletrônicos,871.37
+2022-11,"Loja BH Shopping","Esportes e Lazer",1707.91
+2022-11,"Loja BH Shopping","Livros e Papelaria",306.91
+2022-11,"Loja BH Shopping",Vestuário,1680.56
+2022-11,"Loja Brasília Shopping","Alimentos e Bebidas",19.89
+2022-11,"Loja Brasília Shopping","Beleza e Cuidados",18.43
+2022-11,"Loja Brasília Shopping",Brinquedos,12.85
+2022-11,"Loja Brasília Shopping","Casa e Decoração",767.98
+2022-11,"Loja Brasília Shopping",Eletrônicos,7886.73
+2022-11,"Loja Brasília Shopping","Esportes e Lazer",282.43
+2022-11,"Loja Brasília Shopping","Livros e Papelaria",48.96
+2022-11,"Loja Curitiba Shopping","Alimentos e Bebidas",7.76
+2022-11,"Loja Curitiba Shopping","Beleza e Cuidados",18.05
+2022-11,"Loja Curitiba Shopping",Brinquedos,348.81
+2022-11,"Loja Curitiba Shopping","Casa e Decoração",964.50
+2022-11,"Loja Curitiba Shopping",Eletrônicos,5357.68
+2022-11,"Loja Curitiba Shopping","Esportes e Lazer",358.74
+2022-11,"Loja Curitiba Shopping","Livros e Papelaria",47.66
+2022-11,"Loja Curitiba Shopping",Vestuário,366.02
+2022-11,"Loja Porto Alegre","Alimentos e Bebidas",60.77
+2022-11,"Loja Porto Alegre","Beleza e Cuidados",241.67
+2022-11,"Loja Porto Alegre",Brinquedos,1425.37
+2022-11,"Loja Porto Alegre","Casa e Decoração",1236.54
+2022-11,"Loja Porto Alegre",Eletrônicos,22902.01
+2022-11,"Loja Porto Alegre","Livros e Papelaria",305.68
+2022-11,"Loja Porto Alegre",Vestuário,1004.46
+2022-11,"Loja Recife Shopping","Alimentos e Bebidas",63.46
+2022-11,"Loja Recife Shopping","Beleza e Cuidados",657.36
+2022-11,"Loja Recife Shopping",Brinquedos,295.24
+2022-11,"Loja Recife Shopping","Casa e Decoração",1069.52
+2022-11,"Loja Recife Shopping",Eletrônicos,20206.62
+2022-11,"Loja Recife Shopping","Esportes e Lazer",5935.80
+2022-11,"Loja Recife Shopping","Livros e Papelaria",287.20
+2022-11,"Loja Recife Shopping",Vestuário,2115.48
+2022-11,"Loja Salvador Shopping","Alimentos e Bebidas",17.54
+2022-11,"Loja Salvador Shopping","Beleza e Cuidados",569.67
+2022-11,"Loja Salvador Shopping",Brinquedos,973.38
+2022-11,"Loja Salvador Shopping","Casa e Decoração",569.64
+2022-11,"Loja Salvador Shopping",Eletrônicos,15786.54
+2022-11,"Loja Salvador Shopping","Esportes e Lazer",4775.35
+2022-11,"Loja Salvador Shopping","Livros e Papelaria",378.70
+2022-11,"Loja Salvador Shopping",Vestuário,777.98
+2022-11,"Loja Shopping Center","Beleza e Cuidados",563.75
+2022-11,"Loja Shopping Center","Casa e Decoração",183.70
+2022-11,"Loja Shopping Center",Eletrônicos,3472.67
+2022-11,"Loja Shopping Center","Esportes e Lazer",254.28
+2022-11,"Loja Shopping Center","Livros e Papelaria",19.52
+2022-11,"Loja Shopping Center",Vestuário,286.66
+2022-12,"Loja Barra Shopping","Alimentos e Bebidas",118.77
+2022-12,"Loja Barra Shopping","Beleza e Cuidados",466.29
+2022-12,"Loja Barra Shopping",Brinquedos,159.93
+2022-12,"Loja Barra Shopping","Casa e Decoração",125.71
+2022-12,"Loja Barra Shopping",Eletrônicos,441.84
+2022-12,"Loja Barra Shopping","Esportes e Lazer",3414.02
+2022-12,"Loja Barra Shopping","Livros e Papelaria",218.39
+2022-12,"Loja Barra Shopping",Vestuário,762.24
+2022-12,"Loja BH Shopping","Alimentos e Bebidas",74.24
+2022-12,"Loja BH Shopping","Beleza e Cuidados",577.65
+2022-12,"Loja BH Shopping",Brinquedos,587.00
+2022-12,"Loja BH Shopping","Casa e Decoração",890.51
+2022-12,"Loja BH Shopping",Eletrônicos,2574.28
+2022-12,"Loja BH Shopping","Esportes e Lazer",39.01
+2022-12,"Loja BH Shopping","Livros e Papelaria",460.30
+2022-12,"Loja BH Shopping",Vestuário,644.74
+2022-12,"Loja Brasília Shopping","Beleza e Cuidados",153.80
+2022-12,"Loja Brasília Shopping",Brinquedos,460.53
+2022-12,"Loja Brasília Shopping","Casa e Decoração",1469.38
+2022-12,"Loja Brasília Shopping",Eletrônicos,575.27
+2022-12,"Loja Brasília Shopping","Esportes e Lazer",1876.98
+2022-12,"Loja Brasília Shopping","Livros e Papelaria",315.69
+2022-12,"Loja Brasília Shopping",Vestuário,117.26
+2022-12,"Loja Curitiba Shopping","Alimentos e Bebidas",5.80
+2022-12,"Loja Curitiba Shopping","Beleza e Cuidados",246.58
+2022-12,"Loja Curitiba Shopping",Brinquedos,25.04
+2022-12,"Loja Curitiba Shopping",Eletrônicos,10524.06
+2022-12,"Loja Curitiba Shopping","Esportes e Lazer",7085.77
+2022-12,"Loja Curitiba Shopping","Livros e Papelaria",240.45
+2022-12,"Loja Curitiba Shopping",Vestuário,2040.29
+2022-12,"Loja Porto Alegre","Alimentos e Bebidas",55.27
+2022-12,"Loja Porto Alegre","Beleza e Cuidados",85.66
+2022-12,"Loja Porto Alegre",Brinquedos,315.54
+2022-12,"Loja Porto Alegre","Casa e Decoração",1049.92
+2022-12,"Loja Porto Alegre",Eletrônicos,5760.10
+2022-12,"Loja Porto Alegre","Esportes e Lazer",158.98
+2022-12,"Loja Porto Alegre","Livros e Papelaria",252.41
+2022-12,"Loja Porto Alegre",Vestuário,948.77
+2022-12,"Loja Recife Shopping","Alimentos e Bebidas",60.56
+2022-12,"Loja Recife Shopping","Beleza e Cuidados",137.19
+2022-12,"Loja Recife Shopping",Brinquedos,25.16
+2022-12,"Loja Recife Shopping","Casa e Decoração",479.52
+2022-12,"Loja Recife Shopping","Esportes e Lazer",3653.38
+2022-12,"Loja Recife Shopping","Livros e Papelaria",49.30
+2022-12,"Loja Recife Shopping",Vestuário,874.23
+2022-12,"Loja Salvador Shopping","Alimentos e Bebidas",32.57
+2022-12,"Loja Salvador Shopping","Beleza e Cuidados",559.87
+2022-12,"Loja Salvador Shopping",Brinquedos,796.70
+2022-12,"Loja Salvador Shopping","Casa e Decoração",1365.57
+2022-12,"Loja Salvador Shopping",Eletrônicos,8891.16
+2022-12,"Loja Salvador Shopping","Esportes e Lazer",358.38
+2022-12,"Loja Salvador Shopping","Livros e Papelaria",23.96
+2022-12,"Loja Salvador Shopping",Vestuário,520.44
+2022-12,"Loja Shopping Center","Beleza e Cuidados",280.98
+2022-12,"Loja Shopping Center",Brinquedos,583.68
+2022-12,"Loja Shopping Center","Casa e Decoração",279.55
+2022-12,"Loja Shopping Center",Eletrônicos,2194.82
+2022-12,"Loja Shopping Center","Esportes e Lazer",76.34
+2022-12,"Loja Shopping Center","Livros e Papelaria",356.83
+2022-12,"Loja Shopping Center",Vestuário,1448.54
+2023-01,"Loja Barra Shopping","Alimentos e Bebidas",2.87
+2023-01,"Loja Barra Shopping","Beleza e Cuidados",800.18
+2023-01,"Loja Barra Shopping",Brinquedos,317.74
+2023-01,"Loja Barra Shopping","Casa e Decoração",1754.79
+2023-01,"Loja Barra Shopping",Eletrônicos,10428.63
+2023-01,"Loja Barra Shopping","Esportes e Lazer",397.55
+2023-01,"Loja Barra Shopping","Livros e Papelaria",96.96
+2023-01,"Loja Barra Shopping",Vestuário,1436.15
+2023-01,"Loja BH Shopping","Alimentos e Bebidas",137.90
+2023-01,"Loja BH Shopping","Beleza e Cuidados",478.65
+2023-01,"Loja BH Shopping",Brinquedos,1304.70
+2023-01,"Loja BH Shopping","Casa e Decoração",870.51
+2023-01,"Loja BH Shopping",Eletrônicos,26479.80
+2023-01,"Loja BH Shopping","Esportes e Lazer",156.58
+2023-01,"Loja BH Shopping","Livros e Papelaria",481.72
+2023-01,"Loja BH Shopping",Vestuário,1233.17
+2023-01,"Loja Brasília Shopping","Alimentos e Bebidas",23.76
+2023-01,"Loja Brasília Shopping","Beleza e Cuidados",754.94
+2023-01,"Loja Brasília Shopping",Brinquedos,519.46
+2023-01,"Loja Brasília Shopping","Casa e Decoração",328.44
+2023-01,"Loja Brasília Shopping",Eletrônicos,7198.64
+2023-01,"Loja Brasília Shopping","Esportes e Lazer",732.29
+2023-01,"Loja Brasília Shopping","Livros e Papelaria",173.54
+2023-01,"Loja Brasília Shopping",Vestuário,1184.89
+2023-01,"Loja Curitiba Shopping","Alimentos e Bebidas",27.00
+2023-01,"Loja Curitiba Shopping","Beleza e Cuidados",18.46
+2023-01,"Loja Curitiba Shopping","Casa e Decoração",117.77
+2023-01,"Loja Curitiba Shopping",Eletrônicos,2192.64
+2023-01,"Loja Curitiba Shopping","Livros e Papelaria",97.16
+2023-01,"Loja Curitiba Shopping",Vestuário,582.00
+2023-01,"Loja Porto Alegre","Alimentos e Bebidas",40.85
+2023-01,"Loja Porto Alegre","Beleza e Cuidados",1019.96
+2023-01,"Loja Porto Alegre",Brinquedos,554.88
+2023-01,"Loja Porto Alegre","Casa e Decoração",730.25
+2023-01,"Loja Porto Alegre",Eletrônicos,14616.10
+2023-01,"Loja Porto Alegre","Esportes e Lazer",1034.84
+2023-01,"Loja Porto Alegre","Livros e Papelaria",324.86
+2023-01,"Loja Porto Alegre",Vestuário,1456.10
+2023-01,"Loja Recife Shopping",Brinquedos,444.64
+2023-01,"Loja Recife Shopping","Casa e Decoração",938.72
+2023-01,"Loja Recife Shopping",Eletrônicos,2418.82
+2023-01,"Loja Recife Shopping","Esportes e Lazer",335.91
+2023-01,"Loja Recife Shopping","Livros e Papelaria",224.78
+2023-01,"Loja Recife Shopping",Vestuário,998.53
+2023-01,"Loja Salvador Shopping",Brinquedos,351.55
+2023-01,"Loja Salvador Shopping","Casa e Decoração",743.96
+2023-01,"Loja Salvador Shopping",Eletrônicos,1441.13
+2023-01,"Loja Salvador Shopping","Esportes e Lazer",271.36
+2023-01,"Loja Salvador Shopping","Livros e Papelaria",96.48
+2023-01,"Loja Salvador Shopping",Vestuário,635.04
+2023-01,"Loja Shopping Center","Alimentos e Bebidas",126.27
+2023-01,"Loja Shopping Center","Beleza e Cuidados",474.72
+2023-01,"Loja Shopping Center",Brinquedos,1185.03
+2023-01,"Loja Shopping Center","Casa e Decoração",125.35
+2023-01,"Loja Shopping Center",Eletrônicos,8389.31
+2023-01,"Loja Shopping Center","Esportes e Lazer",797.64
+2023-01,"Loja Shopping Center","Livros e Papelaria",574.80
+2023-01,"Loja Shopping Center",Vestuário,2361.11
+2023-02,"Loja Barra Shopping","Alimentos e Bebidas",79.70
+2023-02,"Loja Barra Shopping","Beleza e Cuidados",569.76
+2023-02,"Loja Barra Shopping",Brinquedos,824.53
+2023-02,"Loja Barra Shopping","Casa e Decoração",97.47
+2023-02,"Loja Barra Shopping",Eletrônicos,12269.18
+2023-02,"Loja Barra Shopping","Esportes e Lazer",1925.31
+2023-02,"Loja Barra Shopping","Livros e Papelaria",171.17
+2023-02,"Loja Barra Shopping",Vestuário,3113.31
+2023-02,"Loja BH Shopping","Alimentos e Bebidas",91.96
+2023-02,"Loja BH Shopping","Beleza e Cuidados",1112.66
+2023-02,"Loja BH Shopping",Brinquedos,681.91
+2023-02,"Loja BH Shopping","Casa e Decoração",813.68
+2023-02,"Loja BH Shopping",Eletrônicos,7254.21
+2023-02,"Loja BH Shopping","Esportes e Lazer",4824.26
+2023-02,"Loja BH Shopping","Livros e Papelaria",115.07
+2023-02,"Loja BH Shopping",Vestuário,705.75
+2023-02,"Loja Brasília Shopping","Beleza e Cuidados",526.03
+2023-02,"Loja Brasília Shopping",Brinquedos,285.72
+2023-02,"Loja Brasília Shopping","Casa e Decoração",39.61
+2023-02,"Loja Brasília Shopping",Eletrônicos,4667.92
+2023-02,"Loja Brasília Shopping","Esportes e Lazer",866.22
+2023-02,"Loja Brasília Shopping","Livros e Papelaria",175.28
+2023-02,"Loja Curitiba Shopping","Alimentos e Bebidas",20.80
+2023-02,"Loja Curitiba Shopping",Brinquedos,708.12
+2023-02,"Loja Curitiba Shopping","Casa e Decoração",1144.38
+2023-02,"Loja Curitiba Shopping",Eletrônicos,7203.77
+2023-02,"Loja Curitiba Shopping","Esportes e Lazer",1678.27
+2023-02,"Loja Curitiba Shopping","Livros e Papelaria",47.71
+2023-02,"Loja Curitiba Shopping",Vestuário,498.16
+2023-02,"Loja Porto Alegre","Alimentos e Bebidas",29.16
+2023-02,"Loja Porto Alegre","Beleza e Cuidados",616.05
+2023-02,"Loja Porto Alegre",Brinquedos,808.18
+2023-02,"Loja Porto Alegre",Eletrônicos,3441.94
+2023-02,"Loja Porto Alegre","Esportes e Lazer",3010.58
+2023-02,"Loja Porto Alegre","Livros e Papelaria",411.02
+2023-02,"Loja Porto Alegre",Vestuário,1128.28
+2023-02,"Loja Recife Shopping","Alimentos e Bebidas",23.23
+2023-02,"Loja Recife Shopping","Beleza e Cuidados",287.96
+2023-02,"Loja Recife Shopping","Casa e Decoração",365.86
+2023-02,"Loja Recife Shopping",Eletrônicos,8580.43
+2023-02,"Loja Recife Shopping","Livros e Papelaria",49.62
+2023-02,"Loja Recife Shopping",Vestuário,248.17
+2023-02,"Loja Salvador Shopping","Alimentos e Bebidas",23.73
+2023-02,"Loja Salvador Shopping","Beleza e Cuidados",182.67
+2023-02,"Loja Salvador Shopping",Brinquedos,299.67
+2023-02,"Loja Salvador Shopping","Casa e Decoração",622.08
+2023-02,"Loja Salvador Shopping",Eletrônicos,9822.62
+2023-02,"Loja Salvador Shopping","Esportes e Lazer",579.32
+2023-02,"Loja Salvador Shopping","Livros e Papelaria",174.76
+2023-02,"Loja Salvador Shopping",Vestuário,2163.28
+2023-02,"Loja Shopping Center","Alimentos e Bebidas",64.26
+2023-02,"Loja Shopping Center","Beleza e Cuidados",475.92
+2023-02,"Loja Shopping Center",Brinquedos,525.91
+2023-02,"Loja Shopping Center","Casa e Decoração",778.84
+2023-02,"Loja Shopping Center",Eletrônicos,9753.18
+2023-02,"Loja Shopping Center","Esportes e Lazer",128.08
+2023-02,"Loja Shopping Center","Livros e Papelaria",94.94
+2023-02,"Loja Shopping Center",Vestuário,1393.47
+2023-03,"Loja Barra Shopping","Alimentos e Bebidas",28.52
+2023-03,"Loja Barra Shopping","Beleza e Cuidados",287.14
+2023-03,"Loja Barra Shopping",Brinquedos,598.00
+2023-03,"Loja Barra Shopping","Casa e Decoração",281.65
+2023-03,"Loja Barra Shopping",Eletrônicos,16458.87
+2023-03,"Loja Barra Shopping","Esportes e Lazer",3132.59
+2023-03,"Loja Barra Shopping","Livros e Papelaria",73.94
+2023-03,"Loja Barra Shopping",Vestuário,115.77
+2023-03,"Loja BH Shopping","Alimentos e Bebidas",62.02
+2023-03,"Loja BH Shopping","Beleza e Cuidados",47.98
+2023-03,"Loja BH Shopping",Brinquedos,292.26
+2023-03,"Loja BH Shopping","Casa e Decoração",383.61
+2023-03,"Loja BH Shopping",Eletrônicos,2404.08
+2023-03,"Loja BH Shopping","Esportes e Lazer",127.95
+2023-03,"Loja BH Shopping","Livros e Papelaria",66.54
+2023-03,"Loja BH Shopping",Vestuário,1189.34
+2023-03,"Loja Brasília Shopping","Alimentos e Bebidas",71.96
+2023-03,"Loja Brasília Shopping","Beleza e Cuidados",519.90
+2023-03,"Loja Brasília Shopping",Brinquedos,775.07
+2023-03,"Loja Brasília Shopping","Casa e Decoração",1226.47
+2023-03,"Loja Brasília Shopping",Eletrônicos,14153.63
+2023-03,"Loja Brasília Shopping","Livros e Papelaria",212.34
+2023-03,"Loja Brasília Shopping",Vestuário,700.54
+2023-03,"Loja Curitiba Shopping","Alimentos e Bebidas",58.90
+2023-03,"Loja Curitiba Shopping","Beleza e Cuidados",426.08
+2023-03,"Loja Curitiba Shopping",Brinquedos,203.60
+2023-03,"Loja Curitiba Shopping","Casa e Decoração",593.92
+2023-03,"Loja Curitiba Shopping",Eletrônicos,5492.40
+2023-03,"Loja Curitiba Shopping","Esportes e Lazer",722.07
+2023-03,"Loja Curitiba Shopping","Livros e Papelaria",264.35
+2023-03,"Loja Curitiba Shopping",Vestuário,408.94
+2023-03,"Loja Porto Alegre","Alimentos e Bebidas",12.09
+2023-03,"Loja Porto Alegre","Beleza e Cuidados",553.81
+2023-03,"Loja Porto Alegre",Brinquedos,601.42
+2023-03,"Loja Porto Alegre","Casa e Decoração",337.37
+2023-03,"Loja Porto Alegre",Eletrônicos,242.71
+2023-03,"Loja Porto Alegre","Esportes e Lazer",326.13
+2023-03,"Loja Porto Alegre","Livros e Papelaria",214.84
+2023-03,"Loja Porto Alegre",Vestuário,305.24
+2023-03,"Loja Recife Shopping","Alimentos e Bebidas",109.82
+2023-03,"Loja Recife Shopping","Beleza e Cuidados",18.30
+2023-03,"Loja Recife Shopping",Brinquedos,314.26
+2023-03,"Loja Recife Shopping","Casa e Decoração",777.39
+2023-03,"Loja Recife Shopping",Eletrônicos,6414.50
+2023-03,"Loja Recife Shopping","Esportes e Lazer",679.27
+2023-03,"Loja Recife Shopping","Livros e Papelaria",138.54
+2023-03,"Loja Recife Shopping",Vestuário,247.14
+2023-03,"Loja Salvador Shopping","Alimentos e Bebidas",4.41
+2023-03,"Loja Salvador Shopping","Beleza e Cuidados",89.90
+2023-03,"Loja Salvador Shopping",Brinquedos,441.89
+2023-03,"Loja Salvador Shopping","Casa e Decoração",490.93
+2023-03,"Loja Salvador Shopping",Eletrônicos,4372.94
+2023-03,"Loja Salvador Shopping","Esportes e Lazer",79.15
+2023-03,"Loja Salvador Shopping","Livros e Papelaria",68.95
+2023-03,"Loja Salvador Shopping",Vestuário,180.81
+2023-03,"Loja Shopping Center","Alimentos e Bebidas",50.65
+2023-03,"Loja Shopping Center","Beleza e Cuidados",218.76
+2023-03,"Loja Shopping Center",Brinquedos,455.38
+2023-03,"Loja Shopping Center","Casa e Decoração",384.07
+2023-03,"Loja Shopping Center",Eletrônicos,15436.84
+2023-03,"Loja Shopping Center","Esportes e Lazer",3594.42
+2023-03,"Loja Shopping Center","Livros e Papelaria",360.40
+2023-03,"Loja Shopping Center",Vestuário,1397.20
+2023-04,"Loja Barra Shopping","Alimentos e Bebidas",77.00
+2023-04,"Loja Barra Shopping","Beleza e Cuidados",714.50
+2023-04,"Loja Barra Shopping",Brinquedos,748.24
+2023-04,"Loja Barra Shopping","Casa e Decoração",675.12
+2023-04,"Loja Barra Shopping",Eletrônicos,9162.41
+2023-04,"Loja Barra Shopping",Vestuário,691.30
+2023-04,"Loja BH Shopping","Alimentos e Bebidas",47.88
+2023-04,"Loja BH Shopping","Beleza e Cuidados",819.19
+2023-04,"Loja BH Shopping",Brinquedos,534.33
+2023-04,"Loja BH Shopping","Casa e Decoração",1335.13
+2023-04,"Loja BH Shopping",Eletrônicos,16493.92
+2023-04,"Loja BH Shopping","Esportes e Lazer",2216.03
+2023-04,"Loja BH Shopping","Livros e Papelaria",419.73
+2023-04,"Loja BH Shopping",Vestuário,772.23
+2023-04,"Loja Brasília Shopping","Alimentos e Bebidas",175.34
+2023-04,"Loja Brasília Shopping","Beleza e Cuidados",731.56
+2023-04,"Loja Brasília Shopping",Brinquedos,89.65
+2023-04,"Loja Brasília Shopping","Casa e Decoração",624.13
+2023-04,"Loja Brasília Shopping",Eletrônicos,2879.29
+2023-04,"Loja Brasília Shopping","Esportes e Lazer",321.11
+2023-04,"Loja Brasília Shopping","Livros e Papelaria",334.83
+2023-04,"Loja Brasília Shopping",Vestuário,2299.57
+2023-04,"Loja Curitiba Shopping","Alimentos e Bebidas",26.26
+2023-04,"Loja Curitiba Shopping","Beleza e Cuidados",1260.47
+2023-04,"Loja Curitiba Shopping",Brinquedos,936.97
+2023-04,"Loja Curitiba Shopping","Casa e Decoração",1029.06
+2023-04,"Loja Curitiba Shopping",Eletrônicos,2652.00
+2023-04,"Loja Curitiba Shopping","Esportes e Lazer",4046.76
+2023-04,"Loja Curitiba Shopping","Livros e Papelaria",69.06
+2023-04,"Loja Curitiba Shopping",Vestuário,394.77
+2023-04,"Loja Porto Alegre","Alimentos e Bebidas",24.05
+2023-04,"Loja Porto Alegre","Beleza e Cuidados",383.91
+2023-04,"Loja Porto Alegre","Casa e Decoração",1202.94
+2023-04,"Loja Porto Alegre",Eletrônicos,745.98
+2023-04,"Loja Porto Alegre","Esportes e Lazer",3126.10
+2023-04,"Loja Porto Alegre","Livros e Papelaria",233.35
+2023-04,"Loja Porto Alegre",Vestuário,291.18
+2023-04,"Loja Recife Shopping","Alimentos e Bebidas",81.40
+2023-04,"Loja Recife Shopping","Beleza e Cuidados",172.36
+2023-04,"Loja Recife Shopping",Brinquedos,839.29
+2023-04,"Loja Recife Shopping","Casa e Decoração",899.89
+2023-04,"Loja Recife Shopping",Eletrônicos,19757.26
+2023-04,"Loja Recife Shopping","Esportes e Lazer",253.22
+2023-04,"Loja Recife Shopping","Livros e Papelaria",213.06
+2023-04,"Loja Recife Shopping",Vestuário,1354.88
+2023-04,"Loja Salvador Shopping","Alimentos e Bebidas",15.04
+2023-04,"Loja Salvador Shopping","Beleza e Cuidados",24.01
+2023-04,"Loja Salvador Shopping",Brinquedos,85.80
+2023-04,"Loja Salvador Shopping","Casa e Decoração",178.66
+2023-04,"Loja Salvador Shopping",Eletrônicos,4272.26
+2023-04,"Loja Salvador Shopping","Esportes e Lazer",6284.76
+2023-04,"Loja Salvador Shopping","Livros e Papelaria",106.82
+2023-04,"Loja Salvador Shopping",Vestuário,262.29
+2023-04,"Loja Shopping Center","Alimentos e Bebidas",81.68
+2023-04,"Loja Shopping Center","Beleza e Cuidados",24.30
+2023-04,"Loja Shopping Center",Brinquedos,849.74
+2023-04,"Loja Shopping Center","Casa e Decoração",285.31
+2023-04,"Loja Shopping Center",Eletrônicos,8602.87
+2023-04,"Loja Shopping Center","Esportes e Lazer",1918.88
+2023-04,"Loja Shopping Center","Livros e Papelaria",197.61
+2023-04,"Loja Shopping Center",Vestuário,2452.99
+2023-05,"Loja Barra Shopping","Alimentos e Bebidas",24.73
+2023-05,"Loja Barra Shopping","Beleza e Cuidados",224.29
+2023-05,"Loja Barra Shopping",Brinquedos,1544.25
+2023-05,"Loja Barra Shopping","Casa e Decoração",1127.16
+2023-05,"Loja Barra Shopping",Eletrônicos,9670.54
+2023-05,"Loja Barra Shopping","Esportes e Lazer",257.28
+2023-05,"Loja Barra Shopping","Livros e Papelaria",165.07
+2023-05,"Loja Barra Shopping",Vestuário,1298.40
+2023-05,"Loja BH Shopping","Alimentos e Bebidas",56.54
+2023-05,"Loja BH Shopping","Beleza e Cuidados",189.72
+2023-05,"Loja BH Shopping",Brinquedos,1548.58
+2023-05,"Loja BH Shopping","Casa e Decoração",259.20
+2023-05,"Loja BH Shopping",Eletrônicos,20575.80
+2023-05,"Loja BH Shopping","Esportes e Lazer",273.91
+2023-05,"Loja BH Shopping","Livros e Papelaria",210.70
+2023-05,"Loja BH Shopping",Vestuário,2869.66
+2023-05,"Loja Brasília Shopping","Alimentos e Bebidas",24.65
+2023-05,"Loja Brasília Shopping","Beleza e Cuidados",1047.35
+2023-05,"Loja Brasília Shopping",Brinquedos,1079.15
+2023-05,"Loja Brasília Shopping","Casa e Decoração",687.18
+2023-05,"Loja Brasília Shopping",Eletrônicos,485.58
+2023-05,"Loja Brasília Shopping","Esportes e Lazer",3074.53
+2023-05,"Loja Brasília Shopping","Livros e Papelaria",33.73
+2023-05,"Loja Brasília Shopping",Vestuário,814.27
+2023-05,"Loja Curitiba Shopping","Alimentos e Bebidas",56.89
+2023-05,"Loja Curitiba Shopping","Beleza e Cuidados",705.52
+2023-05,"Loja Curitiba Shopping",Brinquedos,1062.49
+2023-05,"Loja Curitiba Shopping","Casa e Decoração",839.64
+2023-05,"Loja Curitiba Shopping",Eletrônicos,3283.24
+2023-05,"Loja Curitiba Shopping","Esportes e Lazer",4551.26
+2023-05,"Loja Curitiba Shopping","Livros e Papelaria",122.57
+2023-05,"Loja Porto Alegre","Beleza e Cuidados",379.06
+2023-05,"Loja Porto Alegre",Brinquedos,143.82
+2023-05,"Loja Porto Alegre",Eletrônicos,4785.26
+2023-05,"Loja Porto Alegre",Vestuário,254.66
+2023-05,"Loja Recife Shopping","Beleza e Cuidados",928.55
+2023-05,"Loja Recife Shopping",Brinquedos,673.96
+2023-05,"Loja Recife Shopping","Casa e Decoração",737.42
+2023-05,"Loja Recife Shopping",Eletrônicos,4251.88
+2023-05,"Loja Recife Shopping","Esportes e Lazer",3084.97
+2023-05,"Loja Recife Shopping","Livros e Papelaria",180.61
+2023-05,"Loja Recife Shopping",Vestuário,1850.95
+2023-05,"Loja Salvador Shopping","Alimentos e Bebidas",51.23
+2023-05,"Loja Salvador Shopping","Beleza e Cuidados",635.30
+2023-05,"Loja Salvador Shopping",Brinquedos,149.62
+2023-05,"Loja Salvador Shopping","Casa e Decoração",981.92
+2023-05,"Loja Salvador Shopping",Eletrônicos,3736.23
+2023-05,"Loja Salvador Shopping","Esportes e Lazer",475.55
+2023-05,"Loja Salvador Shopping","Livros e Papelaria",137.01
+2023-05,"Loja Salvador Shopping",Vestuário,2815.56
+2023-05,"Loja Shopping Center","Alimentos e Bebidas",71.60
+2023-05,"Loja Shopping Center","Beleza e Cuidados",111.29
+2023-05,"Loja Shopping Center",Brinquedos,583.58
+2023-05,"Loja Shopping Center","Casa e Decoração",88.41
+2023-05,"Loja Shopping Center",Eletrônicos,2129.34

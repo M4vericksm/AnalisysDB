@@ -1,0 +1,1 @@
+CALL gerar_dados_vendas_2022_2023();

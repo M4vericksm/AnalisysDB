@@ -1,52 +1,79 @@
-import mysql.connector
 import pandas as pd
+import mysql.connector
 import matplotlib.pyplot as plt
+import seaborn as sns
+import locale
 
-# Conexão com MySQL
-con = mysql.connector.connect(
+# Configura localização para formatação de moeda (R$)
+# locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')  # Linux/Mac
+locale.setlocale(locale.LC_ALL, 'Portuguese_Brazil')  # Windows (se necessário)
+
+# ==============================
+# 1. Conexão com o MySQL
+# ==============================
+conexao = mysql.connector.connect(
     host='localhost',
     user='root',
     password='35230358',
     database='VarejoBase'
 )
 
-# Consulta com dimensão loja
+# ==============================
+# 2. Carregar dados da tabela fato_vendas
+# ==============================
 query = """
-SELECT
-    YEAR(v.data_venda) AS ano,
-    MONTH(v.data_venda) AS mes,
-    l.nome_loja,
-    SUM(iv.quantidade * iv.preco_unitario) AS total_vendido
-FROM
-    venda v
-JOIN
-    loja l ON v.id_loja = l.id_loja
-JOIN
-    item_venda iv ON v.id_venda = iv.id_venda
-GROUP BY
-    ano, mes, l.nome_loja
-ORDER BY
-    ano, mes, l.nome_loja;
+SELECT * FROM fato_vendas;
 """
+df = pd.read_sql(query, conexao)
+conexao.close()
 
-df = pd.read_sql(query, con)
-con.close()
+# ==============================
+# 3. Preparação dos dados
+# ==============================
+df['data_venda'] = pd.to_datetime(df['data_venda'])
+df['ano'] = df['data_venda'].dt.year
+df['mes'] = df['data_venda'].dt.month_name()
+df['valor_total'] = pd.to_numeric(df['valor_total'], errors='coerce')
 
-# Criar coluna de período
-df['periodo'] = df['ano'].astype(str) + '-' + df['mes'].astype(int).astype(str).str.zfill(2)
+# Ordena meses corretamente
+meses_ordem = ['January', 'February', 'March', 'April', 'May', 'June',
+               'July', 'August', 'September', 'October', 'November', 'December']
+df['mes'] = pd.Categorical(df['mes'], categories=meses_ordem, ordered=True)
 
-# Agrupar por loja e período
-tabela = df.groupby(['periodo', 'nome_loja'])['total_vendido'].sum().unstack().fillna(0)
+# ==============================
+# 4. Funções OLAP - Drill Down, Roll Up, Slice, Dice
+# ==============================
+# Roll Up: Categoria x Ano
+roll_up = df.groupby(['nome_categoria', 'ano']) \
+             .agg({'valor_total': 'sum'}) \
+             .reset_index()
 
-# Plotar gráfico com todas as labels no eixo X
+# Renomear colunas para exibição
+roll_up.rename(columns={
+    'nome_categoria': 'Categoria',
+    'ano': 'Ano',
+    'valor_total': 'Valor Total'
+}, inplace=True)
+
+# Formatar valor como R$
+roll_up['Valor Total'] = roll_up['Valor Total'].apply(lambda x: locale.currency(x, grouping=True))
+
+print("\nRoll Up Formatado:")
+print(roll_up.head())
+
+# ==============================
+# 5. Visualizações
+# ==============================
+# Converter de volta para numérico para plotagem
+roll_up_plot = roll_up.copy()
+roll_up_plot['Valor Total'] = roll_up_plot['Valor Total'].apply(lambda x: float(locale.atof(x.replace('R$', '').strip())))
+
 plt.figure(figsize=(12, 6))
-tabela.plot(kind='line', marker='o')
-plt.title('Vendas por Loja ao Longo do Tempo')
-plt.xlabel('Período')
-plt.ylabel('Total Vendido (R$)')
-plt.grid(True)
-plt.xticks(ticks=range(len(tabela.index)), labels=tabela.index, rotation=45)
-plt.legend(title='Loja', bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
+sns.barplot(data=roll_up_plot, x='Categoria', y='Valor Total', hue='Ano')
+plt.title('Vendas por Categoria e Ano')
+plt.ylabel('Valor Total Vendido (R$)')
+plt.xlabel('Categoria')
+plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig('grafico_olap_lojas.png', dpi=300)
+plt.legend(title='Ano')
 plt.show()
