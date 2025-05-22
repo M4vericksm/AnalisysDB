@@ -1,30 +1,30 @@
-ano,mes,nome_loja,nome_categoria,produto,total_vendido
-2024,1,"Loja Barra Shopping",Eletrônicos,"Smart TV LG 50 polegadas 4K",2199.00
-2024,1,"Loja BH Shopping","Casa e Decoração","Jogo de panelas antiaderente",299.90
-2024,1,"Loja BH Shopping","Esportes e Lazer","Bola de futebol oficial",18.90
-2024,1,"Loja Brasília Shopping","Casa e Decoração","Edredom casal 100% algodão",189.90
-2024,1,"Loja Brasília Shopping","Esportes e Lazer","Par de halteres ajustáveis",49.80
-2024,1,"Loja Brasília Shopping","Livros e Papelaria","Kit 12 canetas coloridas",59.90
-2024,1,"Loja Curitiba Shopping","Alimentos e Bebidas","Biscoito integral multigrãos",9.00
-2024,1,"Loja Curitiba Shopping",Brinquedos,"Boneca fashion com acessórios",149.90
-2024,1,"Loja Porto Alegre","Casa e Decoração","Luminária LED para mesa",1499.00
-2024,1,"Loja Recife Shopping","Beleza e Cuidados","Shampoo hidratante",49.90
-2024,1,"Loja Recife Shopping",Vestuário,"Calça jeans feminina skinny",259.90
-2024,1,"Loja Recife Shopping",Vestuário,"Camisa polo algodão masculina",189.90
-2024,1,"Loja Salvador Shopping","Livros e Papelaria","Calculadora científica completa",89.90
-2024,1,"Loja Shopping Center","Alimentos e Bebidas","Água mineral sem gás",26.70
-2024,1,"Loja Shopping Center","Alimentos e Bebidas","Café torrado e moído premium",49.80
-2024,1,"Loja Shopping Center",Eletrônicos,"Fone de ouvido bluetooth JBL",199.90
-2024,1,"Loja Shopping Center",Eletrônicos,"Mouse gamer RGB Logitech",199.90
-2024,1,"Loja Shopping Center",Eletrônicos,"Notebook Dell i5 8GB RAM 512GB SSD",2899.00
-2024,1,"Loja Shopping Center",Eletrônicos,"Smartphone Samsung Galaxy S22 128GB",3499.00
-2024,1,"Loja Shopping Center",Vestuário,"Tênis para corrida unissex",399.90
-2024,2,"Loja Barra Shopping",Eletrônicos,"Smartphone Samsung Galaxy S22 128GB",3499.00
-2024,2,"Loja Barra Shopping","Esportes e Lazer","Corda de pular profissional",89.90
-2024,2,"Loja BH Shopping","Livros e Papelaria","Agenda executiva 2024",199.90
-2024,2,"Loja Porto Alegre","Casa e Decoração","Kit 4 toalhas de banho",79.80
-2024,2,"Loja Porto Alegre","Esportes e Lazer","Tapete para yoga antiderrapante",249.90
-2024,2,"Loja Recife Shopping",Vestuário,"Mochila escolar resistente",149.90
-2024,2,"Loja Recife Shopping",Vestuário,"Tênis para corrida unissex",399.90
-2024,2,"Loja Recife Shopping",Vestuário,"Vestido casual feminino",119.90
-2024,2,"Loja Salvador Shopping",Brinquedos,"Quebra-cabeça paisagem",89.90
+ano,mes,nome_loja,produto,total_vendido
+2024,1,"Loja Barra Shopping","Smart TV LG 50 polegadas 4K",2199.00
+2024,1,"Loja BH Shopping","Bola de futebol oficial",18.90
+2024,1,"Loja BH Shopping","Jogo de panelas antiaderente",299.90
+2024,1,"Loja Brasília Shopping","Edredom casal 100% algodão",189.90
+2024,1,"Loja Brasília Shopping","Kit 12 canetas coloridas",59.90
+2024,1,"Loja Brasília Shopping","Par de halteres ajustáveis",49.80
+2024,1,"Loja Curitiba Shopping","Biscoito integral multigrãos",9.00
+2024,1,"Loja Curitiba Shopping","Boneca fashion com acessórios",149.90
+2024,1,"Loja Porto Alegre","Luminária LED para mesa",1499.00
+2024,1,"Loja Recife Shopping","Calça jeans feminina skinny",259.90
+2024,1,"Loja Recife Shopping","Camisa polo algodão masculina",189.90
+2024,1,"Loja Recife Shopping","Shampoo hidratante",49.90
+2024,1,"Loja Salvador Shopping","Calculadora científica completa",89.90
+2024,1,"Loja Shopping Center","Água mineral sem gás",26.70
+2024,1,"Loja Shopping Center","Café torrado e moído premium",49.80
+2024,1,"Loja Shopping Center","Fone de ouvido bluetooth JBL",199.90
+2024,1,"Loja Shopping Center","Mouse gamer RGB Logitech",199.90
+2024,1,"Loja Shopping Center","Notebook Dell i5 8GB RAM 512GB SSD",2899.00
+2024,1,"Loja Shopping Center","Smartphone Samsung Galaxy S22 128GB",3499.00
+2024,1,"Loja Shopping Center","Tênis para corrida unissex",399.90
+2024,2,"Loja Barra Shopping","Corda de pular profissional",89.90
+2024,2,"Loja Barra Shopping","Smartphone Samsung Galaxy S22 128GB",3499.00
+2024,2,"Loja BH Shopping","Agenda executiva 2024",199.90
+2024,2,"Loja Porto Alegre","Kit 4 toalhas de banho",79.80
+2024,2,"Loja Porto Alegre","Tapete para yoga antiderrapante",249.90
+2024,2,"Loja Recife Shopping","Mochila escolar resistente",149.90
+2024,2,"Loja Recife Shopping","Tênis para corrida unissex",399.90
+2024,2,"Loja Recife Shopping","Vestido casual feminino",119.90
+2024,2,"Loja Salvador Shopping","Quebra-cabeça paisagem",89.90
