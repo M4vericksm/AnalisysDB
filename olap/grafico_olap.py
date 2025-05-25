@@ -5,8 +5,7 @@ import seaborn as sns
 import locale
 
 # Configura localização para formatação de moeda (R$)
-# locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')  # Linux/Mac
-locale.setlocale(locale.LC_ALL, 'Portuguese_Brazil')  # Windows (se necessário)
+locale.setlocale(locale.LC_ALL, 'Portuguese_Brazil')  # Windows
 
 # ==============================
 # 1. Conexão com o MySQL
@@ -41,38 +40,83 @@ meses_ordem = ['January', 'February', 'March', 'April', 'May', 'June',
 df['mes'] = pd.Categorical(df['mes'], categories=meses_ordem, ordered=True)
 
 # ==============================
-# 4. Funções OLAP - Drill Down, Roll Up, Slice, Dice
+# 4. OLAP - ROLL-UP: Categoria x Ano
 # ==============================
-# Roll Up: Categoria x Ano
 roll_up = df.groupby(['nome_categoria', 'ano']) \
              .agg({'valor_total': 'sum'}) \
              .reset_index()
 
-# Renomear colunas para exibição
 roll_up.rename(columns={
     'nome_categoria': 'Categoria',
     'ano': 'Ano',
     'valor_total': 'Valor Total'
 }, inplace=True)
 
-# Formatar valor como R$
 roll_up['Valor Total'] = roll_up['Valor Total'].apply(lambda x: locale.currency(x, grouping=True))
 
-print("\nRoll Up Formatado:")
+print("\nROLL-UP (Categoria x Ano):")
 print(roll_up.head())
 
 # ==============================
-# 5. Visualizações
+# 5. OLAP - DRILL-DOWN: Categoria x Ano x Mês
 # ==============================
-# Converter de volta para numérico para plotagem
+drill_down = df.groupby(['nome_categoria', 'ano', 'mes']) \
+               .agg({'valor_total': 'sum'}) \
+               .reset_index()
+
+drill_down.rename(columns={
+    'nome_categoria': 'Categoria',
+    'ano': 'Ano',
+    'mes': 'Mês',
+    'valor_total': 'Valor Total'
+}, inplace=True)
+
+print("\nDRILL-DOWN (Categoria x Ano x Mês):")
+print(drill_down.head())
+
+# ==============================
+# 6. SLICE: Apenas ano de 2024
+# ==============================
+slice_2024 = df[df['ano'] == 2024]
+
+print("\nSLICE (Somente 2024):")
+print(slice_2024[['nome_categoria', 'data_venda', 'valor_total']].head())
+
+# ==============================
+# 7. DICE: Eletrônicos no ano de 2023
+# ==============================
+dice = df[(df['nome_categoria'] == 'Eletrônicos') & (df['ano'] == 2023)]
+
+print("\nDICE (Eletrônicos em 2023):")
+print(dice[['data_venda', 'valor_total']].head())
+
+# ==============================
+# 8. Visualizações
+# ==============================
+
+# ROLL-UP plot
 roll_up_plot = roll_up.copy()
 roll_up_plot['Valor Total'] = roll_up_plot['Valor Total'].apply(lambda x: float(locale.atof(x.replace('R$', '').strip())))
 
 plt.figure(figsize=(12, 6))
 sns.barplot(data=roll_up_plot, x='Categoria', y='Valor Total', hue='Ano')
-plt.title('Vendas por Categoria e Ano')
+plt.title('Vendas por Categoria e Ano (Roll-Up)')
 plt.ylabel('Valor Total Vendido (R$)')
 plt.xlabel('Categoria')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.legend(title='Ano')
+plt.show()
+
+# DRILL-DOWN plot (Exemplo: categoria 'Eletrônicos')
+categoria_exemplo = 'Eletrônicos'
+drill_plot = drill_down[drill_down['Categoria'] == categoria_exemplo]
+
+plt.figure(figsize=(12, 6))
+sns.lineplot(data=drill_plot, x='Mês', y='Valor Total', hue='Ano', marker='o')
+plt.title(f'Drill-Down: Vendas Mensais da Categoria {categoria_exemplo}')
+plt.ylabel('Valor Total (R$)')
+plt.xlabel('Mês')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.legend(title='Ano')

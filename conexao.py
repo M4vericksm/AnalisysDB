@@ -1,20 +1,22 @@
+import streamlit as st
 import pandas as pd
 import mysql.connector
 
 conn = mysql.connector.connect(
-    host="seu_host",
-    user="seu_usuario",
-    password="sua_senha",
-    database="seu_banco"
+    host="127.0.0.1",
+    user="root",
+    password="hian291006",
+    database="varejobase"
 )
 
-query = "SELECT * FROM sua_tabela"
-
-# Usa pandas para ler direto da conexão
+query = "SELECT * FROM cliente"  # Corrija aqui com o nome correto da tabela
 df = pd.read_sql(query, conn)
-
-print(df.head())
-
 conn.close()
-# Este código conecta a um banco de dados MySQL, executa uma consulta SQL e lê os resultados em um DataFrame do pandas.
-# O DataFrame é então impresso, mostrando as primeiras linhas dos dados retornados pela consulta.
+
+st.title("Dashboard MySQL com Streamlit")
+st.write("Visualização dos dados")
+st.dataframe(df)
+
+# Exemplo de gráfico se a coluna 'cliente' for numérica ou quiser contar ocorrências
+if 'cliente' in df.columns:
+    st.bar_chart(df['cliente'])
