@@ -55,19 +55,20 @@ O sistema abrange todas as etapas: ingestão, transformação, análise e visual
 ## 🗂️ Estrutura do Repositório
 
 ```
-├── análise histórica de preços e estoque/       # Análises de flutuação de preços e estoque
-├── api/                                         # API REST com FastAPI
-├── base de dados/                               # Scripts SQL para criação do DW
-├── consultas temporais/                         # Queries e análises baseadas em data
-├── dashboard/                                    # Dashboard com KPIs em Streamlit 
-├── data mining/                                 # Modelos SARIMAX, pipelines e KMeans
-├── mongo.db/                                    # Scripts de ingestão e análise em MongoDB
-├── object/                                      # Projeto Java com JPA + ObjectDB
-├── olap/                                        # Scripts de OLAP: roll-up, drill-down etc.
-├── venv/                                        # Ambiente virtual Python
-├── pom.xml                                      # Configuração Maven
-├── .gitignore                                   # Arquivos ignorados
-└── README.md                                    # Documentação principal
+├── análise histórica de preços e estoque/           # Análises de flutuação de preços e estoque
+├── api/                                             # API REST com FastAPI
+├── base de dados/                                   # Scripts SQL para criação do DW
+├── consultas temporais/                             # Queries e análises baseadas em data
+├── dashboard/                                       # Dashboard com KPIs em Streamlit 
+├── data mining/                                     # Modelos SARIMAX, pipelines e KMeans
+├── mongo.db/                                        # Scripts de ingestão e análise em MongoDB
+├── object/                                          # Projeto Java com JPA + ObjectDB
+├── olap/                                            # Scripts de OLAP: roll-up, drill-down etc.
+├── venv/                                            # Ambiente virtual Python
+├── pom.xml                                          # Configuração Maven
+├── .gitignore                                       # Arquivos ignorados
+└── README.md                                        # Documentação principal
+└── Relatório Técnico - Projeto DataBase Application # Relatório Técnico do Projeto
 ```
 
 ---
