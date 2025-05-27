@@ -4,33 +4,34 @@ from sqlalchemy import create_engine
 from pymongo import MongoClient
 
 # === 1. MySQL: Total de vendas por mês ===
-engine = create_engine('mysql+pymysql://root:hian291006@localhost:3306/teste')
+engine = create_engine('mysql+pymysql://root:35230358@localhost:3306/varejobase')
 
 query_mysql = """
 SELECT 
     YEAR(data_venda) AS ano,
     MONTH(data_venda) AS mes,
     SUM(valor_total) AS total_vendas
-FROM vendas
+FROM venda
 GROUP BY ano, mes
 ORDER BY ano, mes;
 """
 
 df_mysql = pd.read_sql(query_mysql, engine)
 df_mysql["fonte"] = "MySQL"
+df_mysql["mes_ano"] = pd.to_datetime(df_mysql["ano"].astype(str) + "-" + df_mysql["mes"].astype(str).str.zfill(2))
 
 # === 2. ObjectDB via CSV ===
-df_objectdb = pd.read_csv("resultado_objectdb.csv")  # colunas: ano, mes, total_vendas
-df_objectdb["fonte"] = "ObjectDB"
-
-# Unir vendas MySQL e ObjectDB
-df_vendas = pd.concat([df_mysql, df_objectdb], ignore_index=True)
-df_vendas["mes_ano"] = df_vendas["ano"].astype(str) + "-" + df_vendas["mes"].astype(str).str.zfill(2)
+try:
+    df_objectdb = pd.read_csv("resultado_objectdb.csv")  # colunas: ano, mes, total_vendas
+    df_objectdb["fonte"] = "ObjectDB"
+    df_objectdb["mes_ano"] = pd.to_datetime(df_objectdb["ano"].astype(str) + "-" + df_objectdb["mes"].astype(str).str.zfill(2))
+except FileNotFoundError:
+    df_objectdb = pd.DataFrame(columns=["ano", "mes", "total_vendas", "fonte", "mes_ano"])
 
 # === 3. MongoDB: Média da nota e volume de avaliações ===
 client = MongoClient("mongodb://localhost:27017/")
-db = client["ADB"]
-collection = db["avaliacoes"]
+db = client["VarejoBase"]  # nome do seu banco
+collection = db["avaliacao"]  # nome correto da coleção
 
 pipeline = [
     {
@@ -55,15 +56,16 @@ df_avaliacoes = pd.DataFrame([{
     "qtde_avaliacoes": r["qtde_avaliacoes"]
 } for r in resultado_mongo])
 
-df_avaliacoes["mes_ano"] = df_avaliacoes["ano"].astype(str) + "-" + df_avaliacoes["mes"].astype(str).str.zfill(2)
+# ✅ Aqui está a correção importante
+df_avaliacoes["mes_ano"] = pd.to_datetime(df_avaliacoes["ano"].astype(str) + "-" + df_avaliacoes["mes"].astype(str).str.zfill(2))
 
 # === 4. Painel Comparativo ===
 fig, axs = plt.subplots(2, 1, figsize=(12, 8), sharex=True)
 
 # Gráfico de vendas
-for fonte in df_vendas["fonte"].unique():
-    dados = df_vendas[df_vendas["fonte"] == fonte]
-    axs[0].plot(dados["mes_ano"], dados["total_vendas"], marker="o", label=f"Vendas - {fonte}")
+for fonte in [df_mysql, df_objectdb]:
+    if not fonte.empty:
+        axs[0].plot(fonte["mes_ano"], fonte["total_vendas"], marker="o", label=f"Vendas - {fonte['fonte'].iloc[0]}")
 
 axs[0].set_title("Evolução das Vendas (MySQL + ObjectDB)")
 axs[0].set_ylabel("Total de Vendas")
@@ -83,4 +85,3 @@ axs[1].grid(True)
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-    
