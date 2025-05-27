@@ -59,15 +59,12 @@ O sistema abrange todas as etapas: ingestão, transformação, análise e visual
 ├── api/                                         # API REST com FastAPI
 ├── base de dados/                               # Scripts SQL para criação do DW
 ├── consultas temporais/                         # Queries e análises baseadas em data
-├── data mining (previsão de vendas)/            # Modelos SARIMAX e pipelines
+├── dashboard                                    # Dashboard com KPIs em Streamlit 
+├── data mining/                                 # Modelos SARIMAX, pipelines e KMeans
 ├── mongo.db/                                    # Scripts de ingestão e análise em MongoDB
 ├── object/                                      # Projeto Java com JPA + ObjectDB
 ├── olap/                                        # Scripts de OLAP: roll-up, drill-down etc.
 ├── venv/                                        # Ambiente virtual Python
-├── dashboard.py                                 # Dashboard com KPIs em Streamlit
-├── clustering.py                                # KMeans para análise de clientes
-├── conexao.py                                   # Abstrações de conexão com MySQL e MongoDB
-├── consulta.py                                  # Consultas analíticas integradas
 ├── pom.xml                                      # Configuração Maven
 ├── .gitignore                                   # Arquivos ignorados
 └── README.md                                    # Documentação principal
@@ -135,11 +132,11 @@ Scripts em `olap/` implementam operações OLAP:
 
 ### 🔹 Clustering
 
-* `clustering.py` – algoritmo KMeans para segmentação de clientes com base em gasto total e frequência de compra
+* `clustering_clientes.py` – algoritmo KMeans para segmentação de clientes com base em gasto total e frequência de compra
 
 ### 🔹 Previsão de Vendas
 
-* `forecast.py` – modelo SARIMAX para prever vendas futuras com base em séries temporais
+* `previsao_vendas.py` – modelo SARIMAX para prever vendas futuras com base em séries temporais
 
 ---
 
@@ -176,13 +173,13 @@ uvicorn api.main:app --reload
 
 ```bash
 # OLAP
-python olap/rollup_drilldown.py
+python olap/grafico_olap.py
 
 # Clustering
-python clustering.py
+python clustering_clientes.py
 
 # Previsão
-python "data mining (previsão de vendas)/forecast.py"
+python "data mining/previsa_vendas.py"
 ```
 
 ---
