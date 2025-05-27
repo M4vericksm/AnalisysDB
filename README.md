@@ -2,167 +2,233 @@
 
 # 📊 AnalisysDB – Sistema de Análise de Dados de Varejo Multimodelo
 
+> **Projeto acadêmico e experimental** para integração, processamento e análise de dados de vendas no varejo utilizando múltiplos modelos de bancos de dados. Desenvolvido com foco em ETL, OLAP, Data Mining e visualização interativa.
+
 ---
 
 ## 🧾 Visão Geral
 
-O **AnalisysDB** é um sistema completo para análise de dados de varejo que integra múltiplos modelos de bancos de dados para armazenar, processar e analisar informações de vendas, estoque, clientes e produtos. Utiliza:
+O **AnalisysDB** é um sistema completo para análise de dados de varejo, que simula um ecossistema multimodelo envolvendo bancos **relacionais**, **NoSQL** e **orientado a objetos**:
 
-* **Banco de Dados Relacional (Data Warehouse em MySQL)** para armazenar dados estruturados históricos de vendas, estoque, clientes, produtos e fornecedores, modelados em esquema estrela/floco de neve.
-* **Banco NoSQL (MongoDB)** para dados não estruturados, como comentários e avaliações de clientes.
-* **Banco Objeto (simulado via ObjectDB com JPA/Maven e CSV)** para dados de produtos.
+* **Relacional (MySQL)** – dados estruturados: vendas, estoque, clientes, etc.
+* **NoSQL (MongoDB)** – dados não estruturados: comentários e avaliações de produtos.
+* **Objeto (ObjectDB via JPA)** – simulação de persistência orientada a objetos com dados de produtos.
 
-O sistema suporta processos de ETL, análise OLAP multidimensional, técnicas de Data Mining (como clustering e previsão de vendas), e oferece integração via API REST e dashboards interativos para visualização.
+O sistema abrange todas as etapas: ingestão, transformação, análise e visualização. Com ele, é possível explorar tendências históricas, executar consultas temporais, aplicar técnicas de mineração de dados e acessar dashboards em tempo real.
 
 ---
 
 ## 🎯 Objetivos do Projeto
 
-* Aplicar conhecimentos práticos em bancos de dados Objeto-Relacional, Relacional (Data Warehouse) e NoSQL.
-* Desenvolver operações analíticas OLAP com múltiplas dimensões.
-* Implementar técnicas de Data Mining (ex: KMeans clustering, previsão SARIMAX).
-* Criar uma API de integração para consultar dados distribuídos.
-* Fornecer dashboards para visualização de KPIs, análises históricas, tendências e previsões.
+* Aplicar técnicas de integração e análise com bancos de dados heterogêneos.
+* Simular um ecossistema completo de BI (Business Intelligence) para o setor varejista.
+* Desenvolver módulos para:
+
+  * ETL e criação de Data Warehouse (DW)
+  * OLAP (ROLL-UP, DRILL-DOWN, SLICE, DICE)
+  * Mineração de dados (clustering e previsão)
+  * API REST para acesso aos dados
+  * Dashboard interativo com indicadores de desempenho
 
 ---
 
+## 🛠️ Tecnologias Utilizadas
 
-## 🛠️ Tecnologias e Bibliotecas
+### **Bancos de Dados**
 
-* **Java + Maven**: JPA com ObjectDB para persistência objeto-relacional, construção da API REST (via FastAPI/Python para integração).
-* **Python**:
+* 📦 MySQL – modelo relacional (esquema estrela/floco de neve)
+* 📦 MongoDB – dados semiestruturados (JSON)
+* 📦 ObjectDB (via JPA) – persistência orientada a objetos
 
-  * `pandas`, `matplotlib`, `seaborn`: análise e visualização de dados.
-  * `scikit-learn`: clustering (KMeans).
-  * `statsmodels`: modelos de previsão SARIMAX.
-  * `fastapi` + `uvicorn`: desenvolvimento da API REST.
-  * `streamlit`: dashboards interativos.
-  * Conectores: `mysql-connector-python`, `pymongo` para integração com bancos.
-* **Bancos de Dados**: MySQL (relacional DW), MongoDB (NoSQL), ObjectDB simulado via CSV/JPA.
+### **Back-end**
 
----
+* Java + Maven + JPA – integração com ObjectDB
+* Python:
 
-## 🗃️ Modelagem do Data Warehouse
-
-* **Dimensões**: `cliente`, `produto`, `categoria`, `loja`, `funcionario`, `fornecedor`, `promocao`.
-* **Fatos**: `venda`, `item_venda`, `estoque`, `compra`, `item_compra`, `avaliacao`.
-* Procedures para geração de dados históricos, como `gerar_dados_vendas_2022_2023()`.
+  * `pandas`, `scikit-learn`, `statsmodels`, `matplotlib`, `seaborn`
+  * `mysql-connector-python`, `pymongo`
+  * `FastAPI`, `Uvicorn` – criação da API REST
+  * `Streamlit` – dashboards interativos
 
 ---
 
-## 🌐 API de Integração (FastAPI)
+## 🗂️ Estrutura do Repositório
 
-* Endpoints principais:
-
-  * `GET /produtos` — lista de produtos (MySQL).
-  * `GET /precos_historicos` — histórico de preços (MySQL).
-  * `GET /comentarios` — comentários de clientes (MongoDB).
-  * `GET /produto_objeto` — dados simulados via ObjectDB (JSON).
-
-Arquivos relacionados: `api/`, `conexao.py`, `db_mysql.py`, `dbmongo.py`, `main.py`.
-
----
-
-## 📊 Dashboards (Streamlit)
-
-* KPIs exibidos: total de vendas, ticket médio, clientes atendidos, produtos vendidos.
-* Filtros interativos: ano, categoria, loja.
-* Visualizações gráficas com barras e linhas (`st.bar_chart()`, `st.line_chart()`).
-
----
-
-## 🔍 Operações OLAP
-
-Implementadas em Python (`olap/`):
-
-* **ROLL-UP**: agregação por categoria e ano.
-* **DRILL-DOWN**: detalhamento mensal.
-* **SLICE**: seleção por ano.
-* **DICE**: seleção combinada por categoria e ano.
+```
+├── análise histórica de preços e estoque/       # Análises de flutuação de preços e estoque
+├── api/                                         # API REST com FastAPI
+├── base de dados/                               # Scripts SQL para criação do DW
+├── consultas temporais/                         # Queries e análises baseadas em data
+├── data mining (previsão de vendas)/            # Modelos SARIMAX e pipelines
+├── mongo.db/                                    # Scripts de ingestão e análise em MongoDB
+├── object/                                      # Projeto Java com JPA + ObjectDB
+├── olap/                                        # Scripts de OLAP: roll-up, drill-down etc.
+├── venv/                                        # Ambiente virtual Python
+├── dashboard.py                                 # Dashboard com KPIs em Streamlit
+├── clustering.py                                # KMeans para análise de clientes
+├── conexao.py                                   # Abstrações de conexão com MySQL e MongoDB
+├── consulta.py                                  # Consultas analíticas integradas
+├── pom.xml                                      # Configuração Maven
+├── .gitignore                                   # Arquivos ignorados
+└── README.md                                    # Documentação principal
+```
 
 ---
 
-## 📈 Data Mining e Previsão
+## 🧱 Modelagem do Data Warehouse
 
-* **Clustering**: `clustering.py` aplica KMeans para segmentação de clientes por gasto e número de compras.
-* **Previsão de vendas**: SARIMAX em `data mining (previsão de vendas)/forecast.py`.
+### 🎯 Fato
 
----
+* `venda`, `item_venda`, `estoque`, `compra`, `item_compra`, `avaliacao`
 
-## 🚀 Configuração e Execução
+### 🧩 Dimensões
 
-1. **Banco de Dados**
+* `cliente`, `produto`, `categoria`, `loja`, `funcionario`, `fornecedor`, `promocao`
 
-   * Inicie MySQL e MongoDB.
-   * Execute scripts SQL em `base de dados/` para criar e popular o Data Warehouse.
-   * Insira coleções no MongoDB (`comentarios`, `avaliacoes`).
+### 🔁 Procedimentos
 
-2. **Ambiente Python**
-
-   ```bash
-   cd AnalisysDB
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-
-3. **Rodar API**
-
-   ```bash
-   uvicorn api.main:app --reload
-   ```
-
-4. **Executar Dashboards e Scripts**
-
-   ```bash
-   # Operações OLAP
-   python olap/rollup_drilldown.py
-
-   # Clustering
-   python clustering.py
-
-   # Previsão de vendas
-   python "data mining (previsão de vendas)/forecast.py"
-
-   # Dashboard
-   streamlit run dashboard.py
-   ```
+* `gerar_dados_vendas_2022_2023()` – geração de dados históricos simulados
 
 ---
 
-## 📦 Estrutura Java (ObjectDB e API)
+## 🌐 API REST – FastAPI
 
-* Código-fonte Java localizado em `src/main/java` (JPA, API, OLAP).
-* Configurações em `src/main/resources` (`persistence.xml`).
-* Build e dependências via `pom.xml`.
-* Compilação e execução via Maven (`mvn clean install`, `mvn exec:java`).
+Integração leve para consulta e visualização dos dados dos diferentes bancos:
+
+| Método | Endpoint             | Fonte de Dados  | Descrição                       |
+| ------ | -------------------- | --------------- | ------------------------------- |
+| GET    | `/produtos`          | MySQL           | Lista de produtos               |
+| GET    | `/precos_historicos` | MySQL           | Histórico de preços por produto |
+| GET    | `/comentarios`       | MongoDB         | Comentários e avaliações        |
+| GET    | `/produto_objeto`    | JSON (simulado) | Exemplo de acesso via ObjectDB  |
+
+> Local: `api/`, `main.py`, `db_mysql.py`, `dbmongo.py`, `conexao.py`
+
+---
+
+## 📊 Dashboards – Streamlit
+
+Dashboard interativo com indicadores de desempenho e filtros dinâmicos:
+
+* **Indicadores**: total de vendas, ticket médio, número de clientes, produtos vendidos
+* **Gráficos**: de barras, de linha, séries temporais
+* **Filtros**: ano, loja, categoria
+
+```bash
+streamlit run dashboard.py
+```
+
+---
+
+## 🔍 OLAP – Análise Multidimensional
+
+Scripts em `olap/` implementam operações OLAP:
+
+* `ROLL-UP`: agregação por categoria, loja ou ano
+* `DRILL-DOWN`: detalhamento por mês
+* `SLICE`: filtro por dimensão
+* `DICE`: filtros compostos (ex: ano + categoria)
+
+---
+
+## 📈 Data Mining
+
+### 🔹 Clustering
+
+* `clustering.py` – algoritmo KMeans para segmentação de clientes com base em gasto total e frequência de compra
+
+### 🔹 Previsão de Vendas
+
+* `forecast.py` – modelo SARIMAX para prever vendas futuras com base em séries temporais
+
+---
+
+## ⚙️ Instalação e Execução
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/M4vericksm/AnalisysDB.git
+cd AnalisysDB
+```
+
+### 2. Banco de Dados
+
+* Iniciar serviços do MySQL e MongoDB
+* Executar os scripts de criação em `base de dados/`
+* Inserir documentos no MongoDB (`comentarios`, `avaliacoes`, etc.)
+
+### 3. Ambiente Python
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 4. Rodar API REST
+
+```bash
+uvicorn api.main:app --reload
+```
+
+### 5. Rodar Scripts
+
+```bash
+# OLAP
+python olap/rollup_drilldown.py
+
+# Clustering
+python clustering.py
+
+# Previsão
+python "data mining (previsão de vendas)/forecast.py"
+```
+
+---
+
+## ✅ Entregáveis
+
+* ✅ Código-fonte completo (Python, Java)
+* ✅ Relatório técnico e documentação integrada
+* ✅ Base de dados simulada e scripts de ETL
+* ✅ Interface interativa (API REST + Dashboard)
+* ✅ Manual de instalação e execução
 
 ---
 
 ## 📌 Observações Finais
 
-* Mantenha credenciais sensíveis fora do código, usando arquivo `.env`.
-* Projeto extensível para integração com novos bancos e APIs externas.
-* Possíveis melhorias: autenticação na API, deploy em nuvem, interface web customizada.
+* 🛡 **Segurança**: configure variáveis sensíveis em arquivos `.env`
+* 🔄 **Extensibilidade**: suporte a novos bancos (PostgreSQL, APIs REST, Redis)
+* 🚀 **Melhorias Futuras**:
+
+  * Deploy em nuvem (Render, Heroku, AWS)
+  * Interface Web com autenticação
+  * Logs e monitoramento
+  * Automação do ETL com Airflow
 
 ---
 
-## 📄 Entregáveis
+## 👨‍💻 Autores
 
-* Código-fonte completo.
-* Relatório Técnico detalhado.
-* Conjunto de dados para testes.
-* Manual de utilização.
-* Apresentação do projeto.
+**Gabriel Jerônimo**
+
+**Hian VInicius**
+
+**Maverick Martins**
+
+Desenvolvedores em formação, apaixonados por dados, infraestrutura e integração de sistemas.
+
+[GitHub: M4vericksm](https://github.com/M4vericksm)
+
+[GitHub: HIANV](https://github.com/HIANV)
+
+[GitHub: gabrieljvrz](https://github.com/gabrieljvrz)
+
+---
+
+> *Este projeto foi desenvolvido com fins educacionais, para simular um ambiente de análise de dados real e interdisciplinar. Todos os dados utilizados são fictícios.*
 
 ---
 
-## ⚖️ Critérios de Avaliação
-
-* Correção técnica e funcionamento.
-* Abrangência dos requisitos.
-* Qualidade da integração entre bancos.
-* Qualidade e profundidade das análises.
-* Clareza e completude da documentação e apresentação.
-
----
